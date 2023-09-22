@@ -1,0 +1,212 @@
+
+
+
+.review-banner-container {
+    width: 100%;
+    height: 300px;
+    padding-top: 30px;
+    /* background-color: #FF7000; */
+}
+.review-banner {
+    position: relative;
+    width: 1024px;
+    height: 220px;
+    margin: 0 auto;
+    font-family: 'Black Han Sans', sans-serif;
+    font-family: 'Dongle', sans-serif !important;
+    font-family: 'Gamja Flower', cursive;
+    font-family: 'IBM Plex Sans KR', sans-serif;
+    font-family: 'Single Day', cursive;
+    color: white;
+}
+.review-banner-container img {
+    width: 100%;
+    height: 100%;
+
+}
+
+
+.review-banner>p{
+    position: absolute;
+    font-size: 2em;
+    color: rgb(128, 128, 128);
+    left: 5%;
+    top: 50%;
+
+}
+
+.review-container {
+    width: 1024px;
+    margin: 0 auto;
+    padding-top: 0px;
+}
+
+.review-title-container {
+    display: flex;
+    width: 1024px;
+    border-bottom: 1px solid gray;
+}
+
+.review-main-title {
+    height: 40px;
+    border-bottom: 2px solid black;
+}
+
+.reivew-section-title ul {
+    width: 600px;
+    display: flex;
+}
+
+.reivew-section-title ul li {
+    font-family: 'Black Han Sans', sans-serif;
+    font-family: 'Dongle', sans-serif !important;
+    font-family: 'Gamja Flower', cursive;
+    font-family: 'IBM Plex Sans KR', sans-serif;
+    font-family: 'Single Day', cursive;
+    width: 120px;
+    font-size: 1.9em;
+    height: 60px;
+    display: flex;
+    align-items: center;
+
+}
+
+.review-search {
+    /* border: 2px solid darkcyan; */
+    width: 424px;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+}
+.review-search-form {
+    height: 25px;
+    /* border: 2px solid blue; */
+    display: flex;
+    float: right;
+
+}
+.search-bar {
+    display: flex;
+    align-items: center;
+}
+.search-bar input{
+    border: none;
+    border-bottom: 1px solid gray;
+    width: 250px;
+    height: 25px;
+    margin-right: 10px;
+}
+
+.sitter-search-btn button {
+    height: 25px;
+    cursor: pointer;
+    border: none;
+}
+.sitter-search-btn span {
+    background-color: white;
+
+}
+
+
+.review-ul {
+    font-family: 'IBM Plex Sans KR', sans-serif;
+    padding-top: 50px;
+    width: 1024px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-row-gap: 30px;
+
+    /* border: 2px solid red; */
+}
+
+.review-ul li {
+
+    /* border: 2px solid red; */
+    width: 250px;
+    border: 1px solid gray;
+}
+.review-ul li a {
+    color: black;
+}
+
+.review-sitter-img {
+    width: 250px;
+    height: 180px;
+}
+.review-sitter-img img {
+    width: 100%;
+    height: 100%;
+}
+
+.review-sitter-content {
+    padding: 5px;
+    display: flex;
+    border-bottom: 1px solid gray;
+
+}
+.review-sitter-content p {
+    width: 170px;
+}
+
+.review-score {
+
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    width: 80px;
+}
+
+.review-score img {
+    width: 20%;
+    height: 100%;
+}
+.reivew-text-content {
+
+}
+.reivew-text-content dl {
+    height: 90px;
+}
+.reivew-text-content dl dt {
+    padding: 5px;
+}
+
+.reivew-text-content dl dd {
+    height: 70px;
+}
+/* 리뷰내용 말줄임표 css */
+.reivew-text-content dd p {
+    line-height: 1.3;
+    box-sizing: border-box;
+    padding: 5px;
+    /* border: 2px solid red; */
+    height: 45px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: normal;
+    text-align: left;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    display: -webkit-box;
+    font-size: 16px;
+}
+
+.board-pagenation-container {
+    padding-top: 30px;
+}
+.board-pagenation-container ul {
+    display: flex;
+    justify-content: center;
+}
+
+.board-pagenation-container ul li {
+    text-align: center;
+    width: 30px;
+
+}
+
+.board-pagenation-container ul li a {
+    color: black;
+    display: block;
+    font-size: 17px;
+    border: 1px solid gray;
+}

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="ko" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Document</title>
+</head>
+<body>
+<div  th:fragment="header" class="header">
+<header>
+    <div class="header-wrap">
+        <div class="header-contaier">
+            <div class="logo-container">
+                <a href="/common/html/index.html"><h1>BomoBomo</h1></a>
+            </div>
+            <div class="nav-container">
+                <nav class="nav">
+                    <ul class="main-menu">
+                        <li id="downMenu">
+                            <a href="#">회사소개</a>
+                            <dl style="display: none" class="sub-menu" id="subMenu">
+                                <dt>회사 소개</dt>
+                                <dd><a href="#">직원 소개</a></dd>
+                                <dd><a href="#">이용 가이드</a></dd>
+                                <dd><a href="#">인재 채용</a></dd>
+                            </dl>
+                        </li>
+                        <li><a href="/sitter/html/sitterFind.html">씨터찾기</a></li>
+                        <li><a href="#">이벤트</a></li>
+                        <li id="downMenu2"><a href="/board/html/boardFAQ.html">커뮤니티</a>
+                            <dl style="display: none" class="sub-menu" id="subMenu2">
+                                <dt>회사 소개</dt>
+                                <dd><a href="/board/html/boardFAQ.html">자주 묻는 질문</a></dd>
+                                <dd><a href="/board/html/boardNotice.html">공지사항</a></dd>
+                                <dd><a href="/board/html/boardServiceReview.html">서비스 이용후기</a></dd>
+                            </dl>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="right-menu-container">
+                <ul>
+                    <li><a href="/user/html/login.html">로그인</a></li>
+                    <li><a href="/user/html/join.html">회원가입</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</header>
+
+</div>
+</body>
+</html>
+
+
+

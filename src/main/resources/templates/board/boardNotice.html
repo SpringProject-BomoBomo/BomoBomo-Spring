@@ -15,184 +15,190 @@
     <title>공지사항</title>
 </head>
 <body>
-    <div class="header"></div>
+<div class="header" th:replace="fragments/header :: header"></div>
 
-    <main style="height: 1200px; padding-bottom: 80px;" >
-        <div class="board-content-container">
-            <div class="left-background"></div>
-            <div class="board-top-img">
-                <figure>
-                    <img src="/board/img/boardNoticeImg.jpg" alt="상단 사진">
-                </figure>
-                <div class="board-banner-title">
-                    <p>안녕하세요? 무엇을 도와드릴까요?</p>
-                    <p>공지사항을 확인해주세요</p>
-                </div>
-            </div>
-            <!-- <div class="right-background"></div> -->
-
-            <div class="board-a-btn">
-                <a href="/board/html/boardFAQ.html">
-                    <div class="board-a">
-                        <dl >
-                            <dt>
-                                    <img src="/board/img/FAQ-button.png" alt="FAQ 이동">
-                            </dt>
-                            <dd><strong>자주 묻는 질문</strong></dd>
-                            <dd>FAQ</dd>
-
-                        </dl>
-                    </div>
-                </a>
-                <a href="/board/html/boardNotice.html">
-                    <div class="board-a">
-                        <dl style="border: 2px solid #FF7000;">
-                            <dt>
-                                    <img src="/board/img/Notice-button.png" alt="FAQ 이동">
-                            </dt>
-                            <dd><strong>공지사항</strong></dd>
-                            <dd>Notice</dd>
-
-                        </dl>
-                    </div>
-                </a>
-                <a href="/board/html/boardServiceReview.html">
-                    <div class="board-a">
-                        <dl >
-                            <dt>
-                                    <img src="/board/img/Review-button.png" alt="FAQ 이동">
-                            </dt>
-                            <dd><strong>서비스 이용 후기</strong></dd>
-                            <dd>Review</dd>
-
-                        </dl>
-                    </div>
-                </a>
+<main style="height: 1200px; padding-bottom: 80px;" >
+    <div class="board-content-container">
+        <div class="left-background"></div>
+        <div class="board-top-img">
+            <figure>
+                <img src="/board/img/boardNoticeImg.jpg" alt="상단 사진">
+            </figure>
+            <div class="board-banner-title">
+                <p>안녕하세요? 무엇을 도와드릴까요?</p>
+                <p>공지사항을 확인해주세요</p>
             </div>
         </div>
+        <!-- <div class="right-background"></div> -->
 
+        <div class="board-a-btn">
+            <a href="/board/faq">
+                <div class="board-a">
+                    <dl >
+                        <dt>
+                            <img src="/board/img/FAQ-button.png" alt="FAQ 이동">
+                        </dt>
+                        <dd><strong>자주 묻는 질문</strong></dd>
+                        <dd>FAQ</dd>
 
-
-        <!-- 공지사항 영역 -->
-        <div class="Notice-container">
-            <div class="notice-title-search">
-                <div class="Notice-title">
-                    <h3>공지사항</h3>
+                    </dl>
                 </div>
-                <div class="Notice-search">
-                    <form action="" method="">
-                        <select name="noticeSearch" class="notice-select-search">
-                            <option value="1">제목</option>
-                            <option value="2">내용</option>
-                        </select>
-                        <input type="text" class="notice-search-bar" name="noticeSearchByTitleAndContent">
-                        <button class="notice-search-btn"> 
-                           검색
-                        </button>
-                    </form>
+            </a>
+            <a href="/board/notice">
+                <div class="board-a">
+                    <dl style="border: 2px solid #FF7000;">
+                        <dt>
+                            <img src="/board/img/Notice-button.png" alt="FAQ 이동">
+                        </dt>
+                        <dd><strong>공지사항</strong></dd>
+                        <dd>Notice</dd>
+
+                    </dl>
                 </div>
-            </div>
-            <div class="notice-section">
-                <table  class="board-table">
+            </a>
+            <a href="/board/serviceReview">
+                <div class="board-a">
+                    <dl >
+                        <dt>
+                            <img src="/board/img/Review-button.png" alt="FAQ 이동">
+                        </dt>
+                        <dd><strong>서비스 이용 후기</strong></dd>
+                        <dd>Review</dd>
 
-                    <!-- 공지사항 컬럼
-                        <th class="board-number">번호</th>
-                        <th class="board-title">제목</th>
-                        <th class="board-user-id">작성자</th>
-                        <th class="board-date">작성일</th>
-                        <th class="board-count">조회수</th> -->
-
-
-                    <tr>
-                        <!-- 공지사항 내용 -->
-                        <td>1</td>
-                        <td><a href="/board/html/boardDetailNotice.html"><strong>보모보모 재밌엉</strong></a></td>
-                        <td>보노보노</td>
-                        <td>2023/09/14</td>
-                        <td>1</td>
-                    </tr>
-                    <tr>
-                        <td>2</td>
-                        <td><a href="/board/html/boardDetailNotice.html"><strong>보모보모 재밌엉</strong></a></td>
-                        <td>보노보노</td>
-                        <td>2023/09/14</td>
-                        <td>1</td>
-                    </tr>
-                    <tr>
-                        <td>3</td>
-                        <td><a href="/board/html/boardDetailNotice.html"><strong>보모보모 재밌엉</strong></a></td>
-                        <td>보노보노</td>
-                        <td>2023/09/14</td>
-                        <td>1</td>
-                    </tr>
-                    <tr>
-                        <td>4</td>
-                        <td><a href="/board/html/boardDetailNotice.html"><strong>보모보모 재밌엉</strong></a></td>
-                        <td>보노보노</td>
-                        <td>2023/09/14</td>
-                        <td>1</td>
-                    </tr>
-                    <tr>
-                        <td>5</td>
-                        <td><a href="/board/html/boardDetailNotice.html"><strong>보모보모 재밌엉</strong></a></td>
-                        <td>보노보노</td>
-                        <td>2023/09/14</td>
-                        <td>1</td>
-                    </tr>
-                    <tr>
-                        <td>6</td>
-                        <td><a href="/board/html/boardDetailNotice.html"><strong>보모보모 재밌엉</strong></a></td>
-                        <td>보노보노</td>
-                        <td>2023/09/14</td>
-                        <td>1</td>
-                    </tr>
-                    <tr>
-                        <td>7</td>
-                        <td><a href="/board/html/boardDetailNotice.html"><strong>보모보모 재밌엉</strong></a></td>
-                        <td>보노보노</td>
-                        <td>2023/09/14</td>
-                        <td>1</td>
-                    </tr>
-                    <tr>
-                        <td>8</td>
-                        <td><a href="/board/html/boardDetailNotice.html"><strong>보모보모 재밌엉</strong></a></td>
-                        <td>보노보노</td>
-                        <td>2023/09/14</td>
-                        <td>1</td>
-                    </tr>
-                    <tr>
-                        <td>9</td>
-                        <td><a href="/board/html/boardDetailNotice.html"><strong>보모보모 재밌엉</strong></a></td>
-                        <td>보노보노</td>
-                        <td>2023/09/14</td>
-                        <td>1</td>
-                    </tr>
-                    <tr>
-                        <td>10</td>
-                        <td><a href="/board/html/boardDetailNotice.html"><strong>보모보모 재밌엉</strong></a></td>
-                        <td>보노보노</td>
-                        <td>2023/09/14</td>
-                        <td>1</td>
-                    </tr>
-                    
-                </table>
-            </div>
-
-            <!-- 페이징처리 -->
-            <div class="board-pagenation-container">
-                <ul>
-                    <li><a href="#">&lt;</a></li>
-                    <li><a href="#">1</a></li>
-                    <li><a href="#">2</a></li>
-                    <li><a href="#">3</a></li>
-                    <li><a href="#">4</a></li>
-                    <li><a href="#">5</a></li>
-                    <li><a href="#">&gt;</a></li>
-                </ul>
-            </div>
-            
+                    </dl>
+                </div>
+            </a>
         </div>
-    </main>
-    <div class="footer"></div>
+    </div>
+
+
+
+    <!-- 공지사항 영역 -->
+    <div class="Notice-container">
+        <div class="notice-title-search">
+            <div class="Notice-title">
+                <h3>공지사항</h3>
+            </div>
+            <div class="Notice-search">
+                <form action="" method="">
+                    <select name="noticeSearch" class="notice-select-search">
+                        <option value="1">제목</option>
+                        <option value="2">내용</option>
+                    </select>
+                    <input type="text" class="notice-search-bar" name="noticeSearchByTitleAndContent">
+                    <button class="notice-search-btn">
+                        검색
+                    </button>
+                </form>
+            </div>
+        </div>
+        <div class="notice-section">
+            <table  class="board-table">
+
+                <!-- 공지사항 컬럼
+                    <th class="board-number">번호</th>
+                    <th class="board-title">제목</th>
+                    <th class="board-user-id">작성자</th>
+                    <th class="board-date">작성일</th>
+                    <th class="board-count">조회수</th> -->
+
+
+                <tr>
+                    <!-- 공지사항 내용 -->
+                    <td>1</td>
+                    <td><a href="/board/html/boardDetailNotice.html"><strong>보모보모 재밌엉</strong></a></td>
+                    <td>보노보노</td>
+                    <td>2023/09/14</td>
+                    <td>1</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td><a href="/board/html/boardDetailNotice.html"><strong>보모보모 재밌엉</strong></a></td>
+                    <td>보노보노</td>
+                    <td>2023/09/14</td>
+                    <td>1</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td><a href="/board/html/boardDetailNotice.html"><strong>보모보모 재밌엉</strong></a></td>
+                    <td>보노보노</td>
+                    <td>2023/09/14</td>
+                    <td>1</td>
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td><a href="/board/html/boardDetailNotice.html"><strong>보모보모 재밌엉</strong></a></td>
+                    <td>보노보노</td>
+                    <td>2023/09/14</td>
+                    <td>1</td>
+                </tr>
+                <tr>
+                    <td>5</td>
+                    <td><a href="/board/html/boardDetailNotice.html"><strong>보모보모 재밌엉</strong></a></td>
+                    <td>보노보노</td>
+                    <td>2023/09/14</td>
+                    <td>1</td>
+                </tr>
+                <tr>
+                    <td>6</td>
+                    <td><a href="/board/html/boardDetailNotice.html"><strong>보모보모 재밌엉</strong></a></td>
+                    <td>보노보노</td>
+                    <td>2023/09/14</td>
+                    <td>1</td>
+                </tr>
+                <tr>
+                    <td>7</td>
+                    <td><a href="/board/html/boardDetailNotice.html"><strong>보모보모 재밌엉</strong></a></td>
+                    <td>보노보노</td>
+                    <td>2023/09/14</td>
+                    <td>1</td>
+                </tr>
+                <tr>
+                    <td>8</td>
+                    <td><a href="/board/html/boardDetailNotice.html"><strong>보모보모 재밌엉</strong></a></td>
+                    <td>보노보노</td>
+                    <td>2023/09/14</td>
+                    <td>1</td>
+                </tr>
+                <tr>
+                    <td>9</td>
+                    <td><a href="/board/html/boardDetailNotice.html"><strong>보모보모 재밌엉</strong></a></td>
+                    <td>보노보노</td>
+                    <td>2023/09/14</td>
+                    <td>1</td>
+                </tr>
+                <tr>
+                    <td>10</td>
+                    <td><a href="/board/html/boardDetailNotice.html"><strong>보모보모 재밌엉</strong></a></td>
+                    <td>보노보노</td>
+                    <td>2023/09/14</td>
+                    <td>1</td>
+                </tr>
+
+            </table>
+        </div>
+
+        <!-- 페이징처리 -->
+        <div class="board-pagenation-container">
+            <ul>
+                <li><a href="#">&lt;</a></li>
+                <li><a href="#">1</a></li>
+                <li><a href="#">2</a></li>
+                <li><a href="#">3</a></li>
+                <li><a href="#">4</a></li>
+                <li><a href="#">5</a></li>
+                <li><a href="#">&gt;</a></li>
+            </ul>
+        </div>
+
+    </div>
+</main>
+<div class="footer" th:replace="fragments/footer :: footer">
+</div>
+
+<script src="https://code.jquery.com/jquery-3.7.0.js" integrity="sha256-JlqSTELeR4TLqP0OG9dxM7yDPqX1ox/HfgiSLBj8+kM=" crossorigin="anonymous"></script>
+<script src="/common/js/common.js" defer></script>
+<script src="/fragments/js/header.js"></script>
+
 </body>
 </html>

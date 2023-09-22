@@ -1,0 +1,87 @@
+
+.footer{
+    background-color: rgba(34, 30, 30, 0.747);
+    width: 100%;
+    height: 250px;
+    box-sizing: border-box;
+    padding-top: 30px;
+    min-width: 1024px;
+
+}
+
+.footer-container {
+    /* border: 2px solid red; */
+    display: flex;
+    width: 1024px;
+    height: 190px;
+    margin: 0 auto;
+}
+
+/* 푸터 영역 로고 설정 */
+.footer-logo-container {
+
+    /* border: 2px solid red; */
+    width: 200px;
+    height: 90px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    font-size: 1.16em;
+
+
+}
+.footer-logo-container p {
+    padding: 5px;
+}
+.footer-logo-container p span {
+    font-size: 1.1em;
+    font-family: 'Black Han Sans', sans-serif;
+    font-family: 'Dongle', sans-serif !important;
+    font-family: 'Gamja Flower', cursive;
+    font-family: 'IBM Plex Sans KR', sans-serif;
+    font-family: 'Single Day', cursive;
+    color: white;
+}
+.footer-logo-container h1
+{
+    font-family: 'IBM Plex Sans KR', sans-serif;
+    color:white
+
+}
+
+
+.footer-container dt {
+    margin-bottom: 5px;
+}
+
+.footer-container dt dd {
+    margin-bottom: 5px;
+}
+
+/* 약관 영역 */
+.terms-container, .footer-content-container, .footer-customer-container {
+    width: 274px;
+    /* border: 2px solid blue; */
+    box-sizing: border-box;
+    padding: 20px;
+    /* font-family: 'Black Han Sans', sans-serif; */
+    /* font-family: 'Dongle', sans-serif !important; */
+    /* font-family: 'Gamja Flower', cursive; */
+    font-family: 'IBM Plex Sans KR', sans-serif;
+    /* font-family: 'Single Day', cursive; */
+    font-size: 0.73em;
+    line-height: 2;
+    display: flex;
+    justify-content: center;
+    color: white;
+
+
+}
+.terms-container a, .footer-content-container a, .footer-customer-container a {
+    color: white;
+}
+
+
+
+
+

@@ -1,0 +1,155 @@
+.header{
+
+    width: 100%;
+    height: 90px;
+}
+
+.header-wrap{
+
+    height: 90px;
+
+}
+/* 헤더 전체영역 컨테이너 */
+.header-contaier {
+    z-index:999999;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    min-width: 1024px;
+    width: 100%;
+    background-color: white;
+    border-bottom: 2px solid #FF7000;
+
+}
+
+/* 로고 영역 */
+.logo-container {
+
+    /* border: 2px solid red; */
+    width: 200px;
+    height: 90px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.15em;
+
+}
+
+/* 로고 설정 */
+.logo-container  h1 {
+    font-size: 2.6em;
+    color:#FF7000;
+    font-weight: bold;
+    font-family: 'Black Han Sans', sans-serif;
+    font-family: 'Dongle', sans-serif !important;
+    font-family: 'Gamja Flower', cursive;
+    font-family: 'IBM Plex Sans KR', sans-serif;
+    font-family: 'Single Day', cursive;    position: relative;
+
+
+}
+
+
+
+/* 메인메뉴설정  */
+.nav-container nav ul {
+
+    box-sizing: border-box;
+    display: flex;
+    padding: 20px;
+    align-items: last baseline;
+    width: 530px;
+    height: 90px;
+}
+
+.nav-container nav ul li {
+    width: 100%;
+}
+
+
+#downMenu{
+    position: relative;
+}
+
+.sub-menu {
+    /* border: 2px solid red; */
+    position: absolute;
+    background-color: white;
+    height: 150px;
+
+}
+.sub-menu dt {
+    display: none;
+}
+.sub-menu dd {
+    height: 40px;
+}
+.sub-menu dd> a {
+    display: inline;
+    height: 35px;
+    font-size: 1.4em;
+    color: rgb(122, 122, 122);
+    font-weight: normal;
+    font-family: 'Black Han Sans', sans-serif;
+    font-family: 'Dongle', sans-serif !important;
+    font-family: 'Gamja Flower', cursive;
+    font-family: 'IBM Plex Sans KR', sans-serif;
+    font-family: 'Single Day', cursive;    position: relative;
+}
+
+.sub-menu dd a:hover{
+    color: black;
+    font-weight: bold;
+    border-bottom: 1px solid gray;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* 로그인/회원가입 설정 */
+.right-menu-container {
+    width: 294px;
+    /* border: 2px solid darkcyan; */
+}
+
+.right-menu-container ul {
+    float: right;
+    display: flex;
+    justify-content: space-between;
+    align-items: last baseline;
+    padding: 20px 0 20px 20px;
+    box-sizing: border-box;
+    width: 190px;
+    height: 90px;
+    /* border: 2px solid red; */
+
+}
+
+.right-menu-container ul li {
+    text-align: center;
+    width: 100px;
+    /* border: 2px solid red; */
+
+}
+
+
+.nav-container nav ul li> a,
+.right-menu-container ul li a {
+    font-size: 2em;
+    color: black;
+    font-weight: bold;
+    font-family: 'Black Han Sans', sans-serif;
+    font-family: 'Dongle', sans-serif !important;
+    font-family: 'Gamja Flower', cursive;
+    font-family: 'IBM Plex Sans KR', sans-serif;
+    font-family: 'Single Day', cursive;
+}
