@@ -1,0 +1,317 @@
+.review-detail-container {
+    font-family: 'IBM Plex Sans KR', sans-serif;
+
+    padding-top: 50px;
+    width: 1024px;
+    margin: 0 auto;
+    
+}
+
+/* 리뷰대상자(시터) 정보가 담긴 영역 */
+.review-detail-sitter {
+    
+    display: flex;
+}
+
+.revie-detail-sitter-pic {
+    width: 600px;
+}
+.revie-detail-sitter-pic img {
+    width: 100%;
+    height: 100%;
+}
+
+.review-detail-sitter-info {
+    display: flex;
+    align-items: end;
+    width: 424px;
+}
+.review-detail-sitter-name >dt {
+    padding: 30px 30px 10px 30px;
+}
+
+.review-sitter-avg-score  {
+    padding: 0px 10px 10px 30px;
+    height: 30px;
+    display: flex;
+    border: 2px solid red;
+    align-items: center;
+
+}
+
+.review-detail-sitter-info :nth-child(2) span {
+    font-size: 15px
+    
+}
+.review-detail-sitter-info dd img{
+    width: 20px;
+    height: 15px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+
+.none {
+    display: none;
+}
+
+
+
+
+/* 작성된 리뷰에 관한 정보가 담긴 영역
+리뷰 평점 / 작성일자 작성자 내용 등 */
+.review-detail-content {
+
+    /* border: 2px solid red; */
+    width: 1024px;
+    height: 100%;
+}
+
+.review-score-date ul {
+    font-family: 'IBM Plex Sans KR', sans-serif;
+
+    box-sizing: border-box;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    width: 1024px;
+    height: 40px;
+    border-top: 1px solid gray;
+    border-bottom: 1px solid gray;
+}
+.review-score-date ul li {
+    font-size: 13px;
+    height: 20px;
+}
+.review-score-date ul li img {
+    /* border: 2px solid burlywood; */
+    height: 20px;
+}
+.review-score-date ul li:nth-child(2){
+    font-size: 15px;
+    letter-spacing: 3px;
+    text-align: center;
+    width: 70px;
+    border: 2px solid blue;
+}
+
+
+.review-score-date ul li:nth-child(3){
+    width: 734px;
+    text-align: end;
+}
+
+.review-score-date ul li:nth-child(4){
+    width: 184px;
+    text-align: end;
+}
+
+.review-score-date ul li:nth-child(5){
+    width: 100px;
+    text-align: end;
+}
+
+.review-userid {
+    font-size: 14px;
+    padding: 10px;
+    border-bottom: 1px solid rgba(128, 128, 128, 0.42);
+}
+
+.review-user-content {
+    font-size: 13.5px;
+    padding: 20px;
+    line-height: 2.5;
+    border-bottom: 1px solid rgba(128, 128, 128, 0.571);
+}
+.update-delete-btn {
+    box-sizing: border-box;
+    /* border: 2px solid blue; */
+    width: 1024px;
+    padding: 20px;
+    text-align: end;
+}
+
+.updateBtn, .deleteBtn, .reviewListBtn {
+    cursor: pointer;
+    width: 100px;
+    height: 30px;
+}
+
+
+
+
+
+/* 리뷰 댓글 */
+.review-reply  {
+    padding-top: 90px;
+    border-top: 1px solid gray;
+}
+.review-reply dl {
+    display: flex;
+    align-items: center;
+}
+.review-reply dl dt {
+    font-size: 14px;
+    width: 150px;
+    padding: 20px;
+}
+
+.review-reply dl dd:nth-child(2){
+    font-size: 13px;
+    padding: 20px;
+    width: 100%;
+}
+
+
+
+
+
+.reply-wrap {
+    margin: 20px 0;
+}
+
+.reply-wrap__box {
+    margin: 20px 0;
+    border: 1px solid #ccc;
+}
+
+.reply-content__box {
+    border-bottom: 1px solid #ccc;
+    padding: 20px;
+}
+
+#reply-content {
+    margin: 10px 0;
+    width: 100%;
+    resize: none;
+    border: none;
+    background-color: #f7f7f7;
+    height: 80px;
+    padding: 10px;
+}
+
+.reply-writer {
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.reply-btn-wrap {
+    text-align: right;
+}
+
+.btn-reply {
+    font-size: 12px;
+    color: black;
+    text-decoration: none;
+    margin-left: 20px;
+    border: 1px solid #FF7000;
+    padding: 7px;
+    cursor: pointer;
+    height: 40px;
+    background-color: rgb(233, 154, 8)
+}
+
+.btn-reply:hover {
+    background-color: #FF7000;
+}
+
+/* 댓글 목록 스타일 */
+.reply {
+    border-bottom: 1px solid #ccc;
+    display: flex;
+    justify-content: space-between;
+}
+
+.reply-box {
+    width: 95%;
+}
+
+.reply-box__writer {
+    font-weight: bold;
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+.reply-box__content {
+    margin-bottom: 10px;
+    padding-left: 5px;
+}
+
+.reply-btns {
+    background-image: linear-gradient(transparent, transparent), url(https://ssl.pstatic.net/static/comic/comment_new/sp_comment.svg);
+    display: inline-block;
+    overflow: hidden;
+    font-size: 0;
+    line-height: 0;
+    vertical-align: top;
+    background-position: -320px -96px;
+    background-repeat: no-repeat;
+    width: 10px;
+    height: 15px;
+    margin: 7px 0 0 13px;
+    cursor: pointer;
+}
+
+.reply-btn-box {
+    position: relative;
+}
+
+.reply-btns__box {
+    z-index: 999;
+
+    border: 1px solid #888;
+    border-radius: 5px;
+    width: 80px;
+    position: absolute;
+    top: 30px;
+    right: 0;
+    background-color: #f7f7f7;
+}
+
+.reply-btns__box > div {
+    text-align: center;
+    height: 40px;
+    line-height: 40px;
+    cursor: pointer;
+}
+
+.reply-remove-btn {
+    border-bottom: 1px solid #888;
+}
+
+.none {
+    display: none;
+}
+
+/* 수정 처리 스타일 */
+.modify-box {
+    display: flex;
+}
+.modify-content {
+    width: 100%;
+    resize: none;
+    border-color: #ccc;
+    height: 50px;
+    margin-bottom: 20px;
+    padding: 10px;
+}
+.modify-content-btn {
+    font-size: 12px;
+    color: white;
+    text-decoration: none;
+    border: 1px solid #00c7ae;
+    padding: 7px;
+    cursor: pointer;
+    height: 70px;
+    width: 80px;
+    margin-left: 10px;
+    background-color: #00c7ae;
+}
+
+
+
+.reply-time {
+    font-size: 10px;
+    color: #777777;
+    min-width: 80px;
+}

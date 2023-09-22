@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>계정관리</title>
+    <link rel="stylesheet" href="/common/css/common.css"/>
+    <link rel="stylesheet" href="/common/css/footer.css"/>
+    <link rel="stylesheet" href="/common/css/header.css"/>
+    <link rel="stylesheet" href="../css/user_management.css"/>
+    <script src="https://code.jquery.com/jquery-3.7.0.js" integrity="sha256-JlqSTELeR4TLqP0OG9dxM7yDPqX1ox/HfgiSLBj8+kM=" crossorigin="anonymous"></script>
+    <script src="/common/js/index.js" defer></script>
+    <script src="/common/js/common.js" defer></script>
+    <script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script src="../js/user_management.js" defer></script>
+    <script src="/Mypage/js/user_management.js" defer></script>
+    <script src="//t1.daumcdn.net/mapjsapi/bundle/postcode/prod/postcode.v2.js" defer></script>
+</head>
+<body>
+    <div class="header">
+	</div>
+    <main>
+        <div class="user-container">
+            <div class="section">
+                <aside class="menu-bar">
+                    <!-- <a href="/Mypage/html/mypage_main.html" class="logo-img">
+                        <img src="/Mypage/img/logo.png">
+                    </a> -->
+                    <div class="announcement">
+                        <!--클릭시  페이지 이동-->
+                       <a href="#">공지사항</a> 
+                    </div>
+                    <div class="faq">
+                        <a href="#">FAQ</a> 
+                    </div>
+                    <div class="pay">
+                        <a href="/Mypage/html/buy_page.html">결제내역</a>
+                    </div>
+                    <div class="account-mg">
+                        <a href="/Mypage/html/user_management.html">계정관리</a>
+                    </div>
+                </aside>
+                <div class="page-view">
+                    <div class="page-title">
+                        <p>
+                            <a href="/Mypage/html/mypage_main.html">회원정보수정</a>
+                        </p>
+                    </div>
+                      <form action="" method="post">
+                            <!-- 회원 정보 등록 -->
+                            <div class="user">
+                                <div class="manageGroup">
+                                    <div class="updateText">
+                                        <div class="userInfo-area">
+                                            <!-- <img src="/user/img/userId.png"> -->
+                                            <input class="userInfo" type="text" placeholder="ics6064" disabled>
+                                            <!-- <label>로그인 X</label> -->
+                                            
+                                        <!--아이디 수정-->
+                                        </div>
+                                        <div class="userInfo-area">
+                                            <input class="userInfo" type="password" placeholder="비밀번호" required>
+                                            <p class="checkPw">유효하지 않은 비밀번호입니다.</p>
+                                        </div>
+                                        <div class="userInfo-area">
+                                            <input class="userInfo" type="password" placeholder="비밀번호 체크" required>
+                                            <p class="checkPw">비밀번호가 일치하지 않습니다.</p>
+                                        </div>
+                                        <div class="userInfo-area">
+                                            <input class="userInfo" type="text" placeholder="김성찬" disabled>
+                                        </div>
+                                        <div class="userInfo-area">
+                                            <input class="userInfo" type="text" placeholder="휴대폰번호" required>
+                                        </div>
+                                        <div class="userInfo-area">
+                                            <input class="userInfo" type="email" placeholder="이메일" required>
+                                        </div>
+                                        <div class="userInfo-area">
+                                            <input type="text" class="addressnum" id="address-num" placeholder="우편번호" >
+                                            <button type="button" class="addressnumbtn" value="우편번호 찾기" onclick="addressFind()">우편번호</button>
+                                            <br/> 
+                                            <input type="text" class="addressInput" id="address" placeholder="주소 입력" >
+                                            <br/>
+                                            <input type="text" class="addressplus" id="address_extra" placeholder="참고주소" >
+                                            <input type="text" class="addressdetail" id="address_detail" placeholder="상세주소 입력" > 
+
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- 회원 정보 수정 -->
+                                
+                                <div class="buttonJoin">
+                                    <button  class="updatebtn">수정완료</button>
+                                </div>
+                            </div>
+                        </form>
+
+                </div>
+
+    </main>
+    <div class=footer>
+    </div>
+   
+     
+</body>
+</html>

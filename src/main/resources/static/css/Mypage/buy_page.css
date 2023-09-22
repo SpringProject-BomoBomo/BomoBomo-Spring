@@ -1,0 +1,319 @@
+@import url("https://fonts.googleapis.com/css?family=Luckiest+Guy&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Black+Han+Sans&family=Dongle&family=Gamja+Flower&family=IBM+Plex+Sans+KR&family=Single+Day&display=swap');
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+
+main{
+   
+    margin-top: 45px;
+  
+}
+
+
+.buy-container{
+    width: 1024px;
+    height: 100%;
+    /* border: 1px solid black;   */
+    margin: 30px auto;
+      
+}
+.section{
+    margin: 0 auto;
+    /* border: 1px solid blue; */
+    height: 100%;
+    /* width: 1024px; */
+    display: flex;
+    /* background-color: #e6e6e6; */
+}
+.menu-bar{
+    height: 900px;
+    width: 180px;
+    margin-left: 10px;
+    margin-bottom: 15px;
+}
+
+.menu-bar>div{
+    /* background-color: rgb(255, 255, 255); */
+    /* background-color: black; */
+    margin: 30px auto;
+    /* border: 1px solid #bbb; */
+    text-align: center;
+    /* border-radius: 10%; */
+    width: 150px;
+    height: 40px;
+    color: black;
+}
+
+
+
+.menu-bar>div>a:hover{
+   color: white; 
+   background-color: #FF7000;
+ }
+
+.menu-bar>div>a{
+    text-align: center;
+    display: block;
+    text-decoration: none;
+    line-height: 40px;
+    color: black;
+    font-family: 'IBM Plex Sans KR', sans-serif;
+    font-size: 25px;
+    width: 150px;
+    /* border-radius: 10%; */
+}
+
+.page-view{
+    /* border: 1px solid black; */
+    /* background-color: blue; */
+    /* margin-top: 5px; */
+    margin-left: 20px;
+    width: 900px;
+}
+.page-title{
+    /* border: 1px solid black; */
+    height: 80px;
+    border-bottom: 1px solid #bbb;
+    padding-bottom: 5px;
+}
+.page-title>p{
+    margin-left: 20px;
+    height: 80px;
+    /* border: 1px solid black; */
+    line-height: 100px;
+    font-size: 80px;
+    font-family: 'Black Han Sans', sans-serif;
+    font-family: 'Dongle', sans-serif !important;
+    font-family: 'Gamja Flower', cursive;
+    font-family: 'IBM Plex Sans KR', sans-serif;
+    font-family: 'Single Day', cursive;
+    color: #FF7000;
+}
+.page-title>p>a{
+    text-decoration: none;
+     color: #FF7000;
+}
+
+.review-page-area{
+    /* border: 1px solid black; */
+    display: flex;
+    margin-top: 15PX;
+    height: 50px;
+    line-height: 40px;
+}
+.sitter-area{
+    width: 120px;
+    border: 1px solid #bbb;
+    font-family: 'Black Han Sans', sans-serif;
+    font-family: 'Dongle', sans-serif !important;
+    font-family: 'Gamja Flower', cursive;
+    font-family: 'IBM Plex Sans KR', sans-serif;
+    font-family: 'Single Day', cursive;
+    font-size: 30px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.event-area{
+    width: 140px;
+    border: 1px solid #bbb; 
+    font-family: 'Black Han Sans', sans-serif;
+    font-family: 'Dongle', sans-serif !important;
+    font-family: 'Gamja Flower', cursive;
+    font-family: 'IBM Plex Sans KR', sans-serif;
+    font-family: 'Single Day', cursive;
+    font-size: 30px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.buybox{
+    /* display: none; */
+}
+.buy-area{
+    /* border: 1px solid black; */
+    /* margin-top: 0px; */
+    height: 80px;
+  
+}
+
+.buy-text{
+    border: 1px solid black;
+    width: 810px;
+    height: 130px;
+    display: flex;
+    justify-content: space-around;
+    margin-top: 10px;
+   
+}
+.buy-text div{
+    margin-top: 12px;
+}
+
+.img-area{
+    width: 100px;
+    height: 100px;
+    border: 1px solid black;
+}
+.img-area img{
+    width: 100px;
+    height: 100px;
+}
+.buy-text-area{
+    /* border: 1px solid black; */
+    width: 600px;
+    padding-top: 20px;
+    height: 80px;
+    font-size: 18px;
+    
+}
+.buy-text-area p{
+    text-decoration: none;
+    color: black;
+  
+}
+
+.price{
+    /* border: 1px solid black; */
+    /* line-height: 0px; */
+    height: 100px;
+    text-decoration: none;
+}
+
+.text-page p{
+    /* border: 1px solid black; */
+    font-weight: bold;
+    font-size:13px;
+    text-decoration: none;
+    text-align: right;
+}
+
+.price span{
+    /* border: 1px solid black; */
+    line-height: 120px;
+}
+
+.paging{
+    /* border: 1px solid black; */
+    margin-top: 530px;
+
+}
+.page{
+    display: flex;
+    margin: auto;
+    /* border: 1px solid rebeccapurple; */
+    text-align: center;
+    justify-content: center;
+    /* padding: 10px; */
+}
+.page>a{
+    border: 1px solid black;
+    margin: 5px;
+    width: 20px;
+    text-align: center;
+    font-weight: bold;
+    /* background-color: #e6e6e6; */
+    border: 1px solid #e6e6e6;
+}
+
+/*이벤트 ㄹ뷰 작성 공간*/
+.buyboxp{
+    display: none;
+}
+
+
+.buy-area-2{
+    /* border: 1px solid black; */
+    /* margin-top: 0px; */
+    height: 80px;
+    
+}
+
+.buy-text-2{
+    border: 1px solid black;
+    width: 810px;
+    height: 130px;
+    display: flex;
+    justify-content: space-around;
+    margin-top: 10px;
+   
+}
+.buy-text-2 div{
+    margin-top: 12px;
+}
+
+.img-area-2{
+    width: 100px;
+    height: 100px;
+    border: 1px solid black;
+}
+.img-area-2 img{
+    width: 100px;
+    height: 100px;
+}
+.buy-text-area-2{
+    /* border: 1px solid black; */
+    width: 600px;
+    padding-top: 20px;
+    height: 80px;
+    font-size: 18px;
+    
+}
+.buy-text-area-2 p{
+    text-decoration: none;
+    color: black;
+  
+}
+
+.price-2{
+    /* border: 1px solid black; */
+    /* line-height: 0px; */
+    height: 100px;
+    text-decoration: none;
+}
+
+a{
+    color: black;
+    text-decoration: none;
+}
+
+.text-page-2 p{
+    /* border: 1px solid black; */
+    font-weight: bold;
+    font-size:13px;
+    text-decoration: none;
+    text-align: right;
+}
+
+.price-2 span{
+    /* border: 1px solid black; */
+    line-height: 120px;
+}
+
+.paging1{
+    /* border: 1px solid black; */
+    margin-top: 530px;
+
+}
+.page1{
+    display: flex;
+    margin: auto;
+    /* border: 1px solid rebeccapurple; */
+    text-align: center;
+    justify-content: center;
+    /* padding: 10px; */
+}
+.page1>a{
+    border: 1px solid black;
+    margin: 5px;
+    width: 20px;
+    text-align: center;
+    font-weight: bold;
+    /* background-color: #e6e6e6; */
+    border: 1px solid #e6e6e6;
+}
+

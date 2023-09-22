@@ -1,0 +1,209 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+a{
+    text-decoration: none;
+    color: inherit;
+}
+input{
+    padding: 5px;
+    border-radius: 5%;
+    font-size: 16px;
+    font-weight: bold;
+    border: 2px solid rgb(189, 189, 189);
+}
+input:focus{
+    outline: none;
+}
+.admin-container{
+    display: flex;
+    margin :auto ;
+    width: 1200px;
+    height:1000px;
+
+    background-color: #e7e7e7;
+}
+
+.side-container{
+    width: 200px;
+    height: 100%;
+    background-color: #353535;
+}
+
+.side-logo-box{
+    width: 200px;
+    height: 150px;
+    border-bottom: 3px solid #646464;
+}
+
+.logo{
+    width: 200px;
+    height: 150px;
+}
+
+.side-item-container{
+    list-style-type: none;
+}
+
+.side-item{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #e7e7e7;
+    width: 200px;
+    height: 40px;
+    margin: 20px 0;
+    cursor: pointer;
+}
+
+.on{
+    background-color:#01b9ff;
+}
+
+.main-container{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+}
+.main-header{
+    align-items: center;
+    height: 50px;
+    width: 988px;
+    display:flex;
+    background-color: white;
+    /* border:1px solid red; */
+    padding: 5px;
+    box-shadow: 0px 0px 3px 0px gray;
+    border: 1px solid #e6e6e6;
+}
+.main-header-title{
+    color: rgb(139,141, 140);
+    margin: 3px 0 5px 10px;
+    font-size: 30px;
+}
+
+.main-contents{
+    margin-top: 5px;
+    height: 100%;
+}
+.contents-title{
+    margin: 0px 20px;
+    width: 96%;
+    border-bottom: 1px solid #353535;
+    padding-bottom: 10px;
+}
+
+.contents-title > span{
+    color: #646464;
+    font-size: 30px;
+}
+.admin-name{
+    margin-left: auto;
+    width: 50px;
+    margin: 3px 20px 5px 600px;
+    font-size: 30px;
+    color: rgb(139,141, 140);
+}
+.main-header-exit{
+    border: none;
+    border-radius: 10%;
+    width: 100px;
+    height: 40px;
+    cursor: pointer;
+    color: white;
+    background-color: rgb(172, 185, 202);
+    margin-left: auto;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.user-detail-container{
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    height: 85%;
+    margin: 30px auto 0px;
+    background-color: white;
+    box-shadow: 5px 5px 5px 5px gray;
+    border:3px solid #01b9ff;
+    border-radius: 3%;
+}
+
+.detail-title{
+    font-weight: bold;
+    font-size: 30px;
+    margin-top:20px;
+    text-align: center;
+}
+.detail-info{
+    display: flex;
+    width: 95%;
+    height: 80%;
+    margin: 0 auto;
+}
+.detail-side{
+    padding: 20px;
+    list-style-type: none;
+    width: 150px;
+    margin: 50px;
+    border-right: 3px solid #01b9ff;
+    text-align: center;
+}
+.detail-item{
+    padding-bottom: 10px;
+    margin-bottom: 40px;
+    font-size: 25px;
+}
+.detail-main{
+    padding: 20px;
+    list-style-type: none;
+    width: 150px;
+    margin: 50px;
+    text-align: center;
+}
+.address-container{
+    width: 400px;
+    height: 100px;
+    border: 2px solid rgb(189, 189, 189);;
+    border-radius: 3%;
+}
+.address-container>.detail-item{
+    display: flex;
+    margin: 0px 10px;
+}
+.address-container>div>.detail-item{
+    margin-bottom: 0px;
+    display: flex;
+}
+.address-container>div>.detail-item>input{
+    margin:10px 10px;
+}
+.number{
+    width: 20%;
+}
+.road{
+    width:80%
+}
+.user-detail-container > a {
+    margin: 0 auto;
+}
+.user-detail-container > a > button{
+
+    width: 70px;
+    height: 40px;
+    color: white;
+    background-color: #01b9ff;
+    border-radius: 10%;
+    border: 1px solid #e7e7e7;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+}
+/* <ul class="detail-side">
+<li class="detail-item">이름</li>
+<li class="detail-item">아이디</li>
+<li class="detail-item">전화번호</li>
+<li class="detail-item">현재상태</li>
+<li class="detail-item">주소</li>
+</ul>
+<div class="detail-main"></div> */

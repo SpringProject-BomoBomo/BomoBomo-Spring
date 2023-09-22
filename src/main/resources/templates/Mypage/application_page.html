@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BOMOBOMO</title>
+    <link rel="stylesheet" href="/common/css/common.css"/>
+    <link rel="stylesheet" href="/common/css/footer.css"/>
+    <link rel="stylesheet" href="/common/css/header.css"/>
+
+    <link rel="stylesheet" href="/Mypage/css/application_page.css"/>
+    <script src="https://code.jquery.com/jquery-3.7.0.js" integrity="sha256-JlqSTELeR4TLqP0OG9dxM7yDPqX1ox/HfgiSLBj8+kM=" crossorigin="anonymous"></script>
+    <script src="/common/js/index.js" defer></script>
+    <script src="/common/js/common.js" defer></script>
+    <script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script src="/Mypage/js/aplication_page.js"></script>
+</head>
+<body>
+    <div class="header">
+	</div>
+    
+    <main>
+        <div class="user-container">
+            <div class="section">
+                <aside class="menu-bar">
+                    
+                        <!-- <a href="/Mypage/html/mypage_main.html" class="logo-img">
+                            <img src="/Mypage/img/logo.png">
+                        </a> -->
+                    
+                    <div class="announcement">
+                        <!--클릭시  페이지 이동-->
+                       <a href="#">공지사항</a> 
+                    </div>
+                    <div class="faq">
+                        <a href="#">FAQ</a> 
+                    </div>
+                    <div class="pay">
+                        <a href="/Mypage/html/buy_page.html">결제내역</a>
+                    </div>
+                    <div class="account-mg">
+                        <a href="/Mypage/html/user_management.html">계정관리</a>
+                    </div>
+                </aside>
+                <div class="page-view">
+                    <div class="page-title">
+
+
+                        <p>
+                            <a href="/Mypage/html/mypage_main.html">신청관리</a>
+                        </p>
+
+                    </div>
+                
+                    <div class="application-page">
+                        
+                        <div class="logo-container-text">
+                                <a href="#">
+                                    <h1>Bomo</h1><h1>Bomo</h1>          
+                                </a>
+                                <h4>님께 알려주세요.</h4>    
+                        </div>
+                      
+                        <form class="check-area" action="#" method="post"> 
+                            <div class="childern-check">
+                                <p>돌봄이 필요한 아이</p>
+                                <input class="one-check" type="radio" name="one" /> 1명 
+                                <input class="two-check" type="radio" name="one" /> 2명 
+                            </div>
+                            <!--버튼 클릿 js 필요-->
+                            <div class="text-area">
+                                <div class="gender-text">
+                                    <p>첫째 아이 성별</p>
+                                    <!-- <input type="checkbox" class="firstbtn" value="남자">남자</button>
+                                    <input type="checkbox" class="firstbtn-ck" value="여자">여자</button> -->
+                                </div>
+                                <div class="gender-wrap">
+                                    
+                                        <!-- <input class="input-m" type="checkbox" value="남자"> -->
+                                        <label for="gender-m" class="gender-box">
+                                            <span>남자</span>
+                                            <input id="gender-m" type="radio" name="gender" value="M"/>
+                                        </label>
+                                 
+                                
+                                        <!-- <input class="input-w" type="checkbox" value="여자" > -->
+                                        <label for="gender-w" class="gender-box">
+                                            <span>여자</span>
+                                            <input id="gender-w" type="radio" name="gender" value="F"/>
+                                        </label>
+                                    
+                                </div> 
+                            </div>
+                            <div class="text-area-1">     
+                                <div class="gender-text-2">
+                                    <p>두번째 아이 성별</p>
+                                    <!-- <input type="checkbox" class="firstbtn" value="남자">남자</button>
+                                    <input type="checkbox" class="firstbtn-ck" value="여자">여자</button> -->
+                                </div>
+                                <div class="gender-wrap-second">
+                                    
+                                    <!-- <input class="input-m" type="checkbox" value="남자"> -->
+                                    <label for="gender-men" class="gender-box-second">
+                                        <span>남자</span>
+                                        <input id="gender-men" type="radio" name="gender-second" value="M"/>
+                                    </label>
+                             
+                            
+                                    <!-- <input class="input-w" type="checkbox" value="여자" > -->
+                                    <label for="gender-women" class="gender-box-second">
+                                        <span>여자</span>
+                                        <input id="gender-women" type="radio" name="gender-second" value="F"/>
+                                    </label>
+                                
+                                </div> 
+                            </div>      
+                            <!--아이상세 정보 작성-->
+                            <div class="chilren-detil">
+                                <p>아이 성격</p>
+                                <textarea class="children-text"  name="text" placeholder="예시) 보노보노보다 뽀로로를 더 좋아해요.">
+                                </textarea>    
+                            </div>
+                            <!--문단-->
+                            <!-- <div class="read-text">
+                                <p>아래 희망하는 돌봄활동에 요청사항을 선택해 주세요</p>
+                            </div> -->
+                            <!--선택 사항 작성-->
+                            <!-- <div class="chiocecheck-area">
+                                <div class="kor-area">
+                                    <div class="ko">
+                                        <div>
+                                        <img src="/Mypage/img/ko.png">
+                                        </div>
+                                        <p>한글놀이</p>
+                                    </div>
+                                    <div class="select-area">    
+                                        <select name="items1">
+                                            <option value="">상세 요청사항 선택</option>
+                                            <option value="">자음 위주로 알려주세요.</option>
+                                            <option value="">받아쓰기 연습 시켜주세요.</option>
+                                            <option value="">발음위주로 가르쳐주세요.</option>
+                                            <option value="">글씨연습 위주로 알려주세요.</option>
+                                            <option value="">선택하지 않음.</option>
+                                        </select>
+                                    </div>   
+                                </div>
+                                <div class="eng-area">
+                                    <div class="eng">
+                                        <div>
+                                        <img src="/Mypage/img/eng.png">
+                                        </div>
+                                        <p>영어놀이</p>
+                                    </div>
+                                    <div class="select-area">    
+                                        <select name="items2">
+                                            <option value="">상세 요청사항 선택</option>
+                                            <option value="">자음 위주로 알려주세요.</option>
+                                            <option value="">받아쓰기 연습 시켜주세요.</option>
+                                            <option value="">발음위주로 가르쳐주세요.</option>
+                                            <option value="">글씨연습 위주로 알려주세요.</option>
+                                            <option value="">선택하지 않음.</option>
+                                        </select>
+                                    </div>   
+                                </div>
+                                <div class="out-area">
+                                    <div class="out">
+                                        <div>
+                                        <img src="/Mypage/img/out.png">
+                                        </div>
+                                        <p>야외놀이</p>
+                                    </div>
+                                    <div class="select-area">    
+                                        <select name="items3">
+                                            <option value="">상세 요청사항 선택</option>
+                                            <option value="">자음 위주로 알려주세요.</option>
+                                            <option value="">받아쓰기 연습 시켜주세요.</option>
+                                            <option value="">발음위주로 가르쳐주세요.</option>
+                                            <option value="">글씨연습 위주로 알려주세요.</option>
+                                            <option value="">선택하지 않음.</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div> -->
+                            <div class="inputbtn">
+                                <button type="submit" class="btn">저장하기</button>
+                            </div>
+                        </form>
+                </div>    
+    </main>
+    <div class=footer>
+    </div>
+</body>
+</html>

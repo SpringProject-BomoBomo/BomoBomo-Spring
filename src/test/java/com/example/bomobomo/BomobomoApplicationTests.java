@@ -8,6 +8,7 @@ class BomobomoApplicationTests {
 
     @Test
     void contextLoads() {
+
     }
 
 }

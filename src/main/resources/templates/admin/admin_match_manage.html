@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>관리자 페이지</title>
+    <link rel="stylesheet" href="../css/admin_match_manage.css">
+</head>
+<body>
+    <!-- 전체 컨테이너 -->
+    <div class="admin-container">
+        <!-- 사이드 컨테이너 -->
+        <div class="side-container">
+            <div class="side-logo-box">
+                   <img class="logo" src="../img/logo.png" alt="logo">
+            </div>
+            <ul class="side-item-container">
+                <li class="side-item" ><a href="admin_main.html">대시보드</a></li>
+                <li class="side-item"><a href ="admin_user.html">회원정보</a></li>
+                <li class="side-item"><a href="admin_emp.html">직원관리</a></li>
+                <li class="side-item on"><a href="admin_match.html">매칭관리</a></li>
+                <li class="side-item"><a href="admin_event.html">이벤트관리</a></li>
+                <li class="side-item"><a href="admin_announce.html">공지사항</a></li>
+            </ul>
+        </div>
+
+        <!-- 메인 컨테이너 -->
+        <div class="main-container">
+            <!-- 메인 헤더 -->
+            <div class="main-header">
+                <span class="main-header-title">BomoBomo</span>
+                <span class="admin-name">admin</span>
+                <button class="main-header-exit">나가기</button>
+            </div>
+            <!-- 메인 컨텐츠 -->
+            <div class="main-contents">
+                <div class="contents-title">
+                    <span class="main-contents-title-text">매칭관리</span>
+                </div>
+                <div class="match-manage-container">
+                    <div class="info-container">
+                        <div class="user-info">
+                            <p>회원번호 : <span>001</span></p>
+                            <p>이름 : <span>김성찬</span></p>
+                            <p>아이디 : <span>spwer12</span></p>
+                            <p>연락처 : <span>01071921375</span></p>
+                            <a><button>신청서 열람</button></a>
+                        </div>
+                        <div class="emp-info">
+                            <p>직원번호 : <span>001</span></p>
+                            <p>이름 : <span>김직원</span></p>
+                            <p>이메일 : <span>spwer12@gmail.com</span></p>
+                            <p>연락처 : <span>01071921375</span></p>
+                        
+                        </div>
+                    </div>
+                    <div class="management">
+                        <div class="match-info">
+                            <p>매칭 번호 : <span>001</span></p>
+                            <p>현재 상태 : <span>면접대기</span></p>
+                            <a href="#"><button>결제 내역 작성</button></a>
+                        </div>
+                        <div class="status-manage">
+                            <form action="#" method="post">
+                                <select id="status" name="status">
+                                    <option value="면접대기">면접대기</option>
+                                    <option value="결제대기" selected>결제대기</option>
+                                    <option value="완료">완료</option>
+                                </select>
+                                <button>상태변경</button>
+                            </form>
+                            <div>
+                                <a href="admin_match.html"><button>뒤로가기</button></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

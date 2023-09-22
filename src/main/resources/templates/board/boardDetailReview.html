@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="/board/css/boardDetailReview.css"/>
+    <link rel="stylesheet" href="/common/css/common.css"/>
+    <link rel="stylesheet" href="/common/css/footer.css"/>
+    <link rel="stylesheet" href="/common/css/header.css"/>
+    <script src="https://code.jquery.com/jquery-3.7.0.js" integrity="sha256-JlqSTELeR4TLqP0OG9dxM7yDPqX1ox/HfgiSLBj8+kM=" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=2d8cddce5e1cf36a90728390b847c19c" ></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <script src="/common/js/common.js" defer></script>
+    <script src="/board/js/boardDetailReview.js" defer></script>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>공지사항</title>
+</head>
+<body>
+    <div class="header"></div>
+
+    <main style="height: 100%; padding-bottom: 50px;">
+        <div class="review-detail-container">
+            <!-- 리뷰 대상자(시터 정보) -->
+            <div class="review-detail-sitter">
+                <div class="revie-detail-sitter-pic">
+                    <img src="/board/img/reviewImg.webp" alt="리뷰" />
+                </div>
+                <div class="review-detail-sitter-info">
+                    <dl class="review-detail-sitter-name">
+                        <dt>
+                            <span>
+                            <strong>이정미</strong>
+                            </span>시터님에 대한 리뷰입니다.
+                        </dt>
+                        <dd>
+                            <dl class="review-sitter-avg-score">
+                                <dt ><strong>평균 별점</strong></dt>
+                                <dd>
+                                    <img src="/common/img/star.png" alt="">
+                                </dd>
+                                <dd><span><strong>4.5/5</strong></span> </dd>
+                            </dl>
+                        </dd>
+                    </dl>
+                </div>
+            </div>
+            <div class="review-detail-content">
+                <!-- 리뷰 평점 / 리뷰작성일자 -->
+                <div class="review-score-date">
+                    <ul>
+                        <li>
+                            <img src="/common/img/star.png" alt="">
+                        </li>
+                        <li><span>4.5/5</span></li>
+                        <li>
+                            <p>작성일자 <span> 2023/09/16</span></p>
+                        </li>
+                        <li>
+                            <p>수정일자 <span> 2023/09/16</span></p>
+                        </li>
+                        <li>
+                            <p>조회수 <span> 1</span></p>
+                        </li>
+                    </ul>
+                </div>
+                <!-- 리뷰 작성자 -->
+                <div class="review-userid">
+                    <p><span><strong>보노보노</strong></span>님이 남기신 리뷰입니다.</p>
+                </div>
+
+                <!-- 리뷰내용 -->
+                <div class="review-user-content">
+                    <p>보모보모 재밌어요</p>
+                    <p>보모보모 재밌어요</p>
+                    <p>보모보모 재밌어요</p>
+                    <p>보모보모 재밌어요</p>
+                    <p>보모보모 재밌어요</p>
+                    <p>보모보모 재밌어요</p>
+                    <p>보모보모 재밌어요</p>
+                </div>
+                <!-- 리뷰 수정 삭제 목록 버튼-->
+                <div class="update-delete-btn">
+                    <button class="updateBtn">수정</button>
+                    <button class="deleteBtn">삭제</button>
+                    <button class="reviewListBtn" onclick="showReviewListBtn()">목록</button>
+                </div>
+            </div>
+
+            <!-- 댓글 작성란 -->
+            <div class="reply-wrap">
+                      <h3>댓글 작성</h3>
+                      <div class="reply-wrap__box">
+                        <div class="reply-content__box">
+                          <div class="reply-writer" >홍길동</div>
+                          <textarea name="replyContent" id="reply-content" cols="30" rows="10"></textarea>
+                        </div>
+                        <div class="reply-btn-wrap">
+                          <button type="button" class="btn-reply">작성 완료</button>
+                        </div>
+                      </div>
+            <!-- 리뷰 댓글 + 댓글 수정삭제 버튼 -->
+            <div class="review-reply">
+                <dl>
+                    <dt>
+                        <div class="reply-box__writer">
+                            <strong>김철수</strong>
+                        </div>
+                    </dt>
+
+                    <dd>
+                        <div class="reply-list-wrap">
+                            <div class="reply">
+                                <div class="reply-box">
+                                    <div class="reply-box__content">안녕하세요!ssdfsdfsdfsdfsdfsdjiofjsdlfsdfjlksdfnlsdkfnsdklfnsdflksdnflksndklfnsdlkfㄴㅇ라ㅣㄴㅇ러ㅜㄴ이ㅑ런야ㅐ런ㅇ래ㅑㄴ어리낭룬아ㅣ룬이라눙리ㅏㄴ우리ㅏ눙라ㅣㄴㅇ루ㅏㅣㄴㅇ룬이ㅏㄹ</div>
+                                </div>
+                                <div class="reply-btn-box">
+                                    <span class="reply-btns"></span>
+                                    <div class="reply-btns__box none">
+                                        <div class="reply-remove-btn">삭제</div>
+                                        <div class="reply-modify-btn">수정</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </dd>
+                </dl>
+                <dl>
+                    <dt>
+                        <div class="reply-box__writer">
+                            <strong>김철수</strong>
+                        </div>
+                    </dt>
+
+                    <dd>
+                        <div class="reply-list-wrap">
+                            <div class="reply">
+                                <div class="reply-box">
+                                    <div class="reply-box__content">안녕하세요!</div>
+                                </div>
+                                <div class="reply-btn-box">
+                                    <span class="reply-btns"></span>
+                                    <div class="reply-btns__box none">
+                                        <div class="reply-remove-btn">삭제</div>
+                                        <div class="reply-modify-btn">수정</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </dd>
+                </dl>
+                <dl>
+                    <dt>
+                        <div class="reply-box__writer">
+                            <strong>김철수</strong>
+                        </div>
+                    </dt>
+
+                    <dd>
+                        <div class="reply-list-wrap">
+                            <div class="reply">
+                                <div class="reply-box">
+                                    <div class="reply-box__content">안녕하세요!</div>
+                                </div>
+                                <div class="reply-btn-box">
+                                    <span class="reply-btns"></span>
+                                    <div class="reply-btns__box none">
+                                        <div class="reply-remove-btn">삭제</div>
+                                        <div class="reply-modify-btn">수정</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </dd>
+                </dl>
+            </div>
+            
+        </div>
+    </main>
+    <div class="footer"></div>
+</body>
+</html>

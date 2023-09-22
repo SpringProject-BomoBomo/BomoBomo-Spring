@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>관리자 페이지</title>
+    <link rel="stylesheet" href="../css/admin_announce_detail.css">
+</head>
+<body>
+    <!-- 전체 컨테이너 -->
+    <div class="admin-container">
+        <!-- 사이드 컨테이너 -->
+        <div class="side-container">
+            <div class="side-logo-box">
+                   <img class="logo" src="../img/logo.png" alt="logo">
+            </div>
+            <ul class="side-item-container">
+                <li class="side-item" ><a href="admin_main.html">대시보드</a></li>
+                <li class="side-item"><a href ="admin_user.html">회원정보</a></li>
+                <li class="side-item"><a href="admin_emp.html">직원관리</a></li>
+                <li class="side-item"><a href="admin_match.html">매칭관리</a></li>
+                <li class="side-item"><a href="admin_event.html">이벤트관리</a></li>
+                <li class="side-item on"><a href="admin_announce.html">공지사항</a></li>
+            </ul>
+            </ul>
+        </div>
+
+        <!-- 메인 컨테이너 -->
+        <div class="main-container">
+            <!-- 메인 헤더 -->
+            <div class="main-header">
+                <span class="main-header-title">BomoBomo</span>
+                <span class="admin-name">admin</span>
+                <button class="main-header-exit">나가기</button>
+            </div>
+            <!-- 메인 컨텐츠 -->
+            <div class="main-contents">
+                <div class="contents-title">
+                    <span class="main-contents-title-text">공지사항</span>
+                </div>
+                <div class="announce-detail-container">
+                    <div class="board-main">
+                        <div class="board-view">
+                          <!-- 게시글 제목 -->
+                          <div class="title">안녕하세요, 보모보모입니다.</div>
+                          <!-- 게시글 정보 -->
+                          <div class="info">
+                            <!-- dl 리스트 사용해서 게시글 정보 나열 -->
+                            <dl>
+                              <dt>번호</dt>
+                              <dd>1</dd>
+                            </dl>
+                            <dl>
+                              <dt>등록일</dt>
+                              <dd>2023-09-119</dd>
+                            </dl>
+                            <dl>
+                              <dt>조회수</dt>
+                              <dd>23</dd>
+                            </dl>
+                          </div>
+                          <!-- 게시글 작성내용 -->
+                          <div class="board-content">
+                            글 내용이 들어갑니다<br>
+                            글 내용이 들어갑니다<br>
+                            글 내용이 들어갑니다<br>
+                            글 내용이 들어갑니다<br>
+                            글 내용이 들어갑니다<br>
+                            글 내용이 들어갑니다<br>
+                            글 내용이 들어갑니다<br>
+                            글 내용이 들어갑니다
+                          </div>
+                          <!-- 게시글 버튼 컨테이너 -->
+
+                        </div>
+                    </div>
+                </div>
+                <div class="bt-container">
+                    <a href="admin_announce.html" class="board-home">글 목록</a>
+                    <a href="admin_announce_config.html" class="board-fix">수정</a>
+                    <a href="admin_announce.html" class="board-delete">삭제</a>
+                  </div>
+            </div>
+
+        </div>
+    </div>
+</body>
+</html>

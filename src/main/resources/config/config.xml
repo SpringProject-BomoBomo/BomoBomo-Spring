@@ -5,41 +5,41 @@
     <typeAliases>
 
 <!--======================== 관리자 ========================-->
-        <typeAlias type="com.example.bomobomo.domain.dto.AdminDto" alias="adminDto"/>
-        <typeAlias type="com.example.bomobomo.domain.dto.NoticeDto" alias="noticeDto"/>
+<!--        <typeAlias type="com.example.bomobomo.domain.dto.AdminDto" alias="adminDto"/>-->
+<!--        <typeAlias type="com.example.bomobomo.domain.dto.NoticeDto" alias="noticeDto"/>-->
 
 <!--======================== 직원 ========================-->
-        <typeAlias type="com.example.bomobomo.domain.dto.EmpDto" alias="empDto"/>
-        <typeAlias type="com.example.bomobomo.domain.dto.EmpImgDto" alias="empImgDto"/>
+<!--        <typeAlias type="com.example.bomobomo.domain.dto.EmpDto" alias="empDto"/>-->
+<!--        <typeAlias type="com.example.bomobomo.domain.dto.EmpImgDto" alias="empImgDto"/>-->
 
 <!--======================== 회원 ========================-->
-        <typeAlias type="com.example.bomobomo.domain.dto.UserDto" alias="userDto"/>
-        <typeAlias type="com.example.bomobomo.domain.dto.AddressDto" alias="addressDto"/>
-        <typeAlias type="com.example.bomobomo.domain.dto.OrderDto" alias="orderDto"/>
+<!--        <typeAlias type="com.example.bomobomo.domain.dto.UserDto" alias="userDto"/>-->
+<!--        <typeAlias type="com.example.bomobomo.domain.dto.AddressDto" alias="addressDto"/>-->
+<!--        <typeAlias type="com.example.bomobomo.domain.dto.OrderDto" alias="orderDto"/>-->
 
 <!--======================== 매칭 ========================-->
-        <typeAlias type="com.example.bomobomo.domain.dto.MatchDto" alias="matchDto"/>
-        <typeAlias type="com.example.bomobomo.domain.dto.SubmitOrderDto" alias="submitOrderDto"/>
-        <typeAlias type="com.example.bomobomo.domain.dto.EstDto" alias="estDto"/>
-        <typeAlias type="com.example.bomobomo.domain.dto.SitterPayDto" alias="sitterPayDto"/>
+<!--        <typeAlias type="com.example.bomobomo.domain.dto.MatchDto" alias="matchDto"/>-->
+<!--        <typeAlias type="com.example.bomobomo.domain.dto.SubmitOrderDto" alias="submitOrderDto"/>-->
+<!--        <typeAlias type="com.example.bomobomo.domain.dto.EstDto" alias="estDto"/>-->
+<!--        <typeAlias type="com.example.bomobomo.domain.dto.SitterPayDto" alias="sitterPayDto"/>-->
 
 <!--======================== 활동 ========================-->
-        <typeAlias type="com.example.bomobomo.domain.dto.ActDto" alias="actDto"/>
-        <typeAlias type="com.example.bomobomo.domain.dto.ActItemDto" alias="actItemDto"/>
-        <typeAlias type="com.example.bomobomo.domain.dto.ActImgDto" alias="actImgDto"/>
-        <typeAlias type="com.example.bomobomo.domain.dto.EmpActItemDto" alias="empActItemDto"/>
+<!--        <typeAlias type="com.example.bomobomo.domain.dto.ActDto" alias="actDto"/>-->
+<!--        <typeAlias type="com.example.bomobomo.domain.dto.ActItemDto" alias="actItemDto"/>-->
+<!--        <typeAlias type="com.example.bomobomo.domain.dto.ActImgDto" alias="actImgDto"/>-->
+<!--        <typeAlias type="com.example.bomobomo.domain.dto.EmpActItemDto" alias="empActItemDto"/>-->
 
 <!--======================== 게시판 ========================-->
-        <typeAlias type="com.example.bomobomo.domain.dto.SitterBoardDto" alias="sitterBoardDto"/>
-        <typeAlias type="com.example.bomobomo.domain.dto.SitterCommentDto" alias="sitterCommentDto"/>
+<!--        <typeAlias type="com.example.bomobomo.domain.dto.SitterBoardDto" alias="sitterBoardDto"/>-->
+<!--        <typeAlias type="com.example.bomobomo.domain.dto.SitterCommentDto" alias="sitterCommentDto"/>-->
 
 <!--======================== 이벤트 ========================-->
-        <typeAlias type="com.example.bomobomo.domain.dto.EventDto" alias="eventDto"/>
-        <typeAlias type="com.example.bomobomo.domain.dto.EventImgDto" alias="eventImgDto"/>
-        <typeAlias type="com.example.bomobomo.domain.dto.EventDetailDto" alias="eventDetailDto"/>
-        <typeAlias type="com.example.bomobomo.domain.dto.EventApplyDto" alias="eventApplyDto"/>
-        <typeAlias type="com.example.bomobomo.domain.dto.EventPayDto" alias="eventPayDto"/>
-        <typeAlias type="com.example.bomobomo.domain.dto.EventBoardDto" alias="eventBoardDto"/>
-        <typeAlias type="com.example.bomobomo.domain.dto.EventCommentDto" alias="eventCommentDto"/>
+<!--        <typeAlias type="com.example.bomobomo.domain.dto.EventDto" alias="eventDto"/>-->
+<!--        <typeAlias type="com.example.bomobomo.domain.dto.EventImgDto" alias="eventImgDto"/>-->
+<!--        <typeAlias type="com.example.bomobomo.domain.dto.EventDetailDto" alias="eventDetailDto"/>-->
+<!--        <typeAlias type="com.example.bomobomo.domain.dto.EventApplyDto" alias="eventApplyDto"/>-->
+<!--        <typeAlias type="com.example.bomobomo.domain.dto.EventPayDto" alias="eventPayDto"/>-->
+<!--        <typeAlias type="com.example.bomobomo.domain.dto.EventBoardDto" alias="eventBoardDto"/>-->
+<!--        <typeAlias type="com.example.bomobomo.domain.dto.EventCommentDto" alias="eventCommentDto"/>-->
     </typeAliases>
 </configuration>

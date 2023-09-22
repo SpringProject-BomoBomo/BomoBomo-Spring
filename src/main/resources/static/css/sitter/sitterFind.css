@@ -1,0 +1,612 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f7f7f7;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+.container {
+    width: 1020px;
+    margin: 0 auto;
+    padding: 40px 0;
+    min-height: 1000px;
+}
+
+.mainHeader {
+    display: flex;
+    padding-top: 15px;
+}
+
+.sitterFindGreeting {
+    width: 50%;
+    font-size: 25px;
+    font-weight: 700;
+    margin: 0px 0px 20px 20px;
+}
+
+.sitterFindCount {
+    width: 50%;
+    padding-top: 15px;
+    font-size: 20px;
+    font-weight: 300;
+    margin-bottom: 20px;
+    text-align: right;
+}
+
+.button img {
+    width: 20px;
+    height: 20px;
+}
+
+.title {
+    text-align: left;
+    height: 50px;
+    margin-bottom: 40px;
+    font-size: 50px;
+
+}
+
+.sitterInfoList {
+    margin-top: 50px;
+    display: grid;
+    grid-template-columns: repeat(3, minmax(250px, 400px));
+    gap: 20px;
+    justify-content: center;
+}
+
+.sitterIndividual {
+    overflow: hidden;
+    border-radius: 10px;
+    position: relative;
+    background-color: #fff;
+    border: 1px solid #ccc;
+}
+
+.sitterInfoAndImg {
+    
+    width: 100%;
+    height: 180px;
+    background-size: cover;
+    background-position: center;
+    transition: 0.5s;
+    position: relative;
+    display: flex;
+}
+
+.sitterInfo {
+    width: 65%;
+    margin: 20px auto;
+}
+.sitterImg {
+    width: 35%;
+    overflow: hidden;
+}
+
+.sitterImg img {
+    margin-left: 10px;
+    width: 80px;
+    height: 100px;
+    border-radius: 5px;
+    margin-top: 30px;
+    transition: all 0.5s linear;
+}
+
+.sitterImg img:hover  {
+    transform: scale(1.2);
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.sitterInfo div{
+    margin: 10px 0px 0px 10px;
+}
+
+.board-img-box {
+    position: relative;
+    height: 200px;
+    overflow: hidden;
+}
+
+
+.board-item-title {
+    font-size: 18px;
+    margin-bottom: 5px;
+}
+
+
+
+.add-post-btn {
+    display: block;
+    width: 110px;
+    padding: 10px;
+    margin: 40px 0;
+    background-color: #00c7ae;
+    color: #fff;
+    text-align: center;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.add-post-btn:hover {
+    background-color: #00a792;
+}
+
+.sitterFilter {
+    width: 100%;
+    margin-top: 10px;
+    display: flex;
+}
+
+/* .sitterFilter span{
+    padding: 5px 10px 5px 10px;
+    margin: 5px 10px 5px 10px;
+    background-color: violet;
+    border: 1px solid black;
+    border-radius: 3px;
+    font-size: 20px;
+    text-align: center;
+    align-items: center;
+} */
+
+.sitterFilter button{
+    padding: 5px 10px 5px 10px;
+    margin: 5px 10px 5px 10px;
+    background-color: violet;
+    border: 1px solid black;
+    border-radius: 3px;
+    font-size: 20px;
+    text-align: center;
+    align-items: center;
+}
+
+.sitterFilter button:hover {
+    cursor: pointer;
+}
+
+
+.sitterFilter img{
+    width: 90px;
+    height: 100px;
+
+}
+
+.btn-wrap span:hover{
+    background-color: orange;
+}
+
+
+.sitterContext {
+    background-color: #FF7000;;
+    padding: 10px;
+    height: 55px;
+}
+
+.board-img-box:hover .board-item-image {
+    transform: scale(1.1);
+}
+
+.board-item-info {
+    position: absolute;
+    justify-content: space-between;
+    color: #fff;
+    width: 100%;
+    border-radius: 5px 5px 0 0;
+    padding: 10px;
+    visibility: hidden;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    opacity: 0;
+    transition: opacity 0.5s;
+}
+
+.board-img-box:hover .board-item-info {
+    display: flex;
+    visibility: visible;
+    opacity: 1;
+}
+
+.like,
+.comment {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.like-count,
+.comment-count {
+    margin-left: 5px;
+}
+
+.board-item-title {
+    font-size: 18px;
+    margin-bottom: 5px;
+}
+
+.sitterContext span {
+    font-size: 14px;
+    color: white;
+}
+
+/* 페이징 */
+.page {
+    text-decoration: none;
+    color: #FF7000;
+}
+
+.paging {
+    margin: 50px 0px 50px 0px;
+    /* margin-top: 50px; */
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.pageNum {
+    border: 1.5px solid orange;
+    width: 30px;
+    height: 30px;
+    border-radius: 5px;
+    margin: 0 5px;
+    text-align: center;
+    line-height: 30px;
+    background-color: white;
+    cursor: pointer;
+}
+
+
+.active, .pageNum:hover {
+    background-color: #FF7000;
+    color: white;
+}
+
+
+
+
+
+
+
+a.button{
+    display:inline-block; 
+    padding: 10px 20px; 
+    text-decoration:none; 
+    color:#fff; 
+    background-color: #FF7000;
+    border: 2px solid #FF7000;
+    margin:20px;
+    border-radius: 10px;
+
+}
+a.button:hover {
+    background: orange;
+}
+
+#modal{
+  display:none;
+  position:fixed; 
+  width:100%; height:100%;
+  top:0; left:0; 
+  background:rgba(0,0,0,0.3);
+}
+
+/* .modal1{
+    display:none;
+    position:fixed;
+    top:50%; left:50%;
+    transform: translate(-50%,-50%);
+    margin-top: 50px;
+    width: 100%;
+    height: 670px;
+    max-width: 100%;
+    background:#fff;
+    /* border: 2px solid black; */
+    /* border-radius: 10px; 
+  
+  }   */
+
+.modal-con{
+  display:none;
+  position:fixed;
+  top:50%; left:50%;
+  transform: translate(-50%,-50%);
+  margin-top: 40px;
+  width: 800px;
+  max-width: 1000px;
+  height: 600px;
+  /* min-height: 30%; */
+  background:#fff;
+  border: 2px solid black;
+  border-radius: 10px;
+
+}
+.modal-con .title{
+    text-align: center;
+  font-size:20px; 
+  padding: 20px; 
+  /* background : gold; */
+  border-radius: 10px;
+}
+.modal-con .con{
+  font-size:15px; line-height:1.3;
+  padding: 10px;
+}
+.modal-con .close:not(.addrModal){
+  display:block;
+  position:absolute;
+  width:30px; height:30px;
+  border-radius:50%; 
+  border: 3px solid #000;
+  text-align:center; line-height: 30px;
+  text-decoration:none;
+  color:#000; font-size:20px; font-weight: bold;
+  margin: 15px 750px;
+}
+
+.addrModal {
+    display:block;
+    position:absolute;
+    width:30px; height:30px;
+    border-radius:50%; 
+    border: 3px solid #000;
+    text-align:center; line-height: 30px;
+    text-decoration:none;
+    color:#000; font-size:20px; font-weight: bold;
+    margin: -27px 460px;
+  
+}
+.close:hover {
+    background-color: red;
+    border: 1px solid black;
+
+  }
+
+
+input[type="checkbox"] {
+    width: 1rem;
+    height: 1rem;
+    border-radius: 50%;
+    border: 1px solid black;
+    appearance: none;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+input[type="checkbox"]:checked {
+    background: rebeccapurple;
+    border: none;
+}
+
+.mons, .times, .kid {
+    display: flex;
+}
+.mon {
+    margin: 40px 30px auto;
+    width: 60px;
+    height: 50px;
+    border-radius: 50%;
+    text-align: center;
+    padding-top: 18px;    
+    background-color: lightgrey;
+}
+.times {
+    margin: 40px 30px auto;
+}
+
+.mon:hover {
+    background-color: #FF7000;
+    cursor: pointer;
+}
+
+.day {
+    margin: 10px 30px auto;
+    width: 60px;
+    height: 50px;
+    border-radius: 50%;
+    text-align: center;
+    color: white;
+    padding-top: 18px;    
+    background-color: #FF7000;
+}
+
+.day:hover {
+    background-color: lightgray;
+    cursor: pointer;
+}
+
+
+.sitterTime {
+    padding: 6px;
+    margin: 10px 40px auto;
+    width: 150px;
+    height: 40px;
+    font-size: 20px;
+    border: 1px solid lightgray;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.timeSitter {
+    padding: 6px;
+    margin: 10px 40px auto;
+    width: 150px;
+    height: 40px;
+    font-size: 20px;
+    background-color: #FF7000;
+    border: 1px solid #FF7000;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.sitterTime:hover {
+    cursor: pointer;
+    background-color: #FF7000;
+    border: 2px solid orange;
+}
+.timeSitter:hover {
+    cursor: pointer;
+    background-color: #FF7000;
+    border: 2px solid orange;
+}
+
+.sitterSel {
+    text-align: center;
+}
+
+.sitterSelBtn, .sitterTerBtn{
+    width : 355px;
+    height: 40px;
+    cursor: pointer;
+    color: white;
+    background-color: #FF7000;
+    border: 0px solid black;
+    border-radius: 5px;
+    font-weight: 500;
+    font-size: 20px;
+    margin: 50px auto;
+}
+
+.sitterDay {
+    margin: 20px 0px 20px auto;
+    width: 100%;
+    height: 100px;
+}
+.sitterTimes {
+    margin-top: 60px;
+}
+
+
+.kidAgeImg {
+    margin: 20px 60px auto;
+    display: flex;
+    max-width: 150px;
+    height: 150px;
+    border: 1px solid black;
+    border-radius: 5px;
+}
+
+.kidAge {
+    margin: 20px 60px auto;
+    display: flex;
+    max-width: 150px;
+    width: 150px;
+    height: 30px;
+    border: 1px solid black;
+    text-align: center;
+    font-size: 20px;
+}
+
+.kidAge span {
+    color: lightgray;
+    font-size: 10px;
+    margin-top: 12px;
+}
+
+.kidAgeImg img {
+    width: 150px;
+    height: 150px;
+    border-radius: 5px;
+
+}
+
+
+
+.sitterInfoType {
+    width: 500px;
+    margin: 20px auto;
+    height: 560px;
+    border: 1px solid #FF7000;
+    border-radius: 10px;
+}
+
+.possible {
+    text-align: center;
+    font-size: 30px;
+}
+
+.sitterTre {
+    margin-top: 20px;
+    height: 400px;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    display: grid;
+    grid-template-columns: repeat(5, minmax(170px, 0px));
+    border: 1px solid black;
+    border-radius: 5px;
+}
+.sitterTre img{
+    margin-top: 25px;
+    width: 40px;
+    height: 40px;
+}
+
+.possibleImg {
+    margin: 10px auto;
+    width: 80px;
+    height: 80px;
+    background-color: lightgray;
+    border-radius: 50%;
+}
+
+.possibleImg:hover {
+    cursor: pointer;
+    width: 85px;
+    background-color: yellow;
+}
+
+
+.possibleName {
+    margin-top: 20px;
+}
+
+.areaSel {
+    text-align: center;
+    padding: 10px 0px;
+    font-size: 20px;
+    margin: 50px auto;
+    width: 500px;
+    height: 50px;
+    border: 1px solid lightgray;
+
+}
+
+.areaSelList {
+    margin: -50px auto;
+    width: 500px;
+    height: 350px;
+
+}
+
+.addrSelList {
+    width: 200px;
+    border: 1px solid #C4C4C4;
+    box-sizing: border-box;
+    border-radius: 10px;
+    padding: 12px 13px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+    border: 1px solid #FF7000;
+    margin: 20px 0px 0px 20px;
+}
+
+.addrList:focus{
+    border: 1px solid orange;
+    box-sizing: border-box;
+    border-radius: 10px;
+    outline: 3px solid #F8E4FF;
+    border-radius: 10px;
+}

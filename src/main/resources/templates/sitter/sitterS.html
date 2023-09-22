@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="ko" xmlns:th="http://www.thymeleaf.org">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/common/css/header.css" />
+    <link rel="stylesheet" href="/common/css/footer.css" />
+    <link rel="stylesheet" href="/common/css/common.css" />
+    <script src="/common/js/index.js" defer></script>
+    <script src="/common/js/common.js" defer></script>
+
+    <link rel="stylesheet" href="../css/sitterS.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css" />
+    <title>BOMOBOMO</title>
+</head>
+
+<body>
+
+    <div>
+        <!-- 헤더 -->
+        <div class="header">
+        </div>
+        <!-- 헤더 -->
+
+        <main>
+            <div class="user-container">
+                <div class="section">
+
+                    <div class="page-view">
+                        <div class="page-title">
+                            <p>내용장석</p>
+                        </div>
+                    
+                        <div class="application-page">
+                            
+                            <div class="logo-container-text">
+                                    <a href="#">
+                                        <h1>Bomo</h1><h1>Bomo</h1>          
+                                    </a>
+                                    <h4>님께 알려주세요.</h4>    
+                            </div>
+                          
+                            <form class="check-area" action="#" method="post"> 
+                                <div class="childern-check">
+                                    <p>돌봄이 필요한 아이</p>
+                                    <input class="one-check" type="radio" name="one" /> 1명 
+                                    <input class="two-check" type="radio" name="one" /> 2명 
+                                </div>
+                                <!--버튼 클릿 js 필요-->
+                                <div class="text-area">
+                                    <div class="gender-text">
+                                        <p>첫째 아이 성별</p>
+                                        <!-- <input type="checkbox" class="firstbtn" value="남자">남자</button>
+                                        <input type="checkbox" class="firstbtn-ck" value="여자">여자</button> -->
+                                    </div>
+                                    <div class="gender-check">
+                                        <div class="check-box">
+                                            <!-- <input class="input-m" type="checkbox" value="남자"> -->
+                                            <label for="input-m" class="label">
+                                                <span>남자</span>
+                                                <input class="input-m" type="checkbox" name="gender" value="남자">
+                                            </label>
+                                        </div>
+                                        <div class="check-box">
+                                            <!-- <input class="input-w" type="checkbox" value="여자" > -->
+                                            <label for="input-w" class="label1">
+                                                <span>여자</span>
+                                                <input class="input-w" type="checkbox" name="gender" value="여자" >
+                                            </label>
+                                        </div>
+                                    </div> 
+                                </div>
+                                <div class="text-area-1">     
+                                    <div class="gender-text-2">
+                                        <p>두번째 아이 성별</p>
+                                        <!-- <input type="checkbox" class="firstbtn" value="남자">남자</button>
+                                        <input type="checkbox" class="firstbtn-ck" value="여자">여자</button> -->
+                                    </div>
+                                    <div class="gender-check-2">
+                                        <div class="check-box-two">
+                                            <input class="input-m-check" type="checkbox" value="남자">
+                                            <label for="input-m-check" class="label-area">
+                                                <span>남자</span>
+                                            </label>
+                                        </div>
+                                        <div class="check-box-two">
+                                            <input class="input-w-check" type="checkbox" value="여자">
+                                            <label for="input-w-check" class="label-area-two">
+                                                <span>여자</span>
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>      
+                                <!--아이상세 정보 작성-->
+                                <div class="chilren-detil">
+                                    <p>아이 성격</p>
+                                    <input class="chilren-text" type="text" name="text" placeholder="예시) 보노보노보다 뽀로로를 더 좋아해요."/>
+                                </div>
+                                <!--문단-->
+                                <div class="read-text">
+                                    <p>아래 희망하는 돌봄활동에 요청사항을 선택해 주세요</p>
+                                </div>
+                                <!--선택 사항 작성-->
+                                <div class="chiocecheck-area">
+                                    <div class="kor-area">
+                                        <div class="ko">
+                                            <div>
+                                            <img src="/Mypage/img/ko.png">
+                                            </div>
+                                            <p>한글놀이</p>
+                                        </div>
+                                        <div class="select-area">    
+                                            <select name="items1">
+                                                <option value="">상세 요청사항 선택</option>
+                                                <option value="">자음 위주로 알려주세요.</option>
+                                                <option value="">받아쓰기 연습 시켜주세요.</option>
+                                                <option value="">발음위주로 가르쳐주세요.</option>
+                                                <option value="">글씨연습 위주로 알려주세요.</option>
+                                                <option value="">선택하지 않음.</option>
+                                            </select>
+                                        </div>   
+                                    </div>
+                                    <div class="eng-area">
+                                        <div class="eng">
+                                            <div>
+                                            <img src="/Mypage/img/eng.png">
+                                            </div>
+                                            <p>영어놀이</p>
+                                        </div>
+                                        <div class="select-area">    
+                                            <select name="items2">
+                                                <option value="">상세 요청사항 선택</option>
+                                                <option value="">자음 위주로 알려주세요.</option>
+                                                <option value="">받아쓰기 연습 시켜주세요.</option>
+                                                <option value="">발음위주로 가르쳐주세요.</option>
+                                                <option value="">글씨연습 위주로 알려주세요.</option>
+                                                <option value="">선택하지 않음.</option>
+                                            </select>
+                                        </div>   
+                                    </div>
+                                    <div class="out-area">
+                                        <div class="out">
+                                            <div>
+                                            <img src="/Mypage/img/out.png">
+                                            </div>
+                                            <p>야외놀이</p>
+                                        </div>
+                                        <div class="select-area">    
+                                            <select name="items3">
+                                                <option value="">상세 요청사항 선택</option>
+                                                <option value="">자음 위주로 알려주세요.</option>
+                                                <option value="">받아쓰기 연습 시켜주세요.</option>
+                                                <option value="">발음위주로 가르쳐주세요.</option>
+                                                <option value="">글씨연습 위주로 알려주세요.</option>
+                                                <option value="">선택하지 않음.</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="inputbtn">
+                                    <button type="submit" class="btn">저장하기</button>
+                                </div>
+                            </form>
+                    </div>    
+        </main>
+
+    <div class="footer">
+    </div>
+
+
+    <script src="https://code.jquery.com/jquery-3.6.4.js"></script>
+    <script src="../js/sitterFind.js"></script>
+
+
+</body>
+
+</html>

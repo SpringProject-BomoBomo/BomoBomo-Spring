@@ -1,0 +1,655 @@
+@import url("https://fonts.googleapis.com/css?family=Luckiest+Guy&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Black+Han+Sans&family=Dongle&family=Gamja+Flower&family=IBM+Plex+Sans+KR&family=Single+Day&display=swap');
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+
+main{
+   
+    margin-top: 45px;
+  
+}
+
+
+.mypage-container{
+    width: 1024px;
+    height: 100%;
+    /* border: 1px solid black;   */
+    margin: 30px auto;
+      
+}
+.section{
+    margin: 0 auto;
+    /* border: 1px solid blue; */
+    height: 100%;
+    /* width: 1024px; */
+    display: flex;
+    /* background-color: #e6e6e6; */
+}
+.menu-bar{
+    /* display: flex;
+    flex-direction: column;
+    justify-content: center; */
+    /* border: 1px solid #bbb; */
+    /* background-color: red; */
+    height: 900px;
+    width: 180px;
+    margin-left: 10px;
+    margin-bottom: 15px;
+}
+/* .menu-bar>div:first-child{
+    width: 180px;
+    height: 100px;
+    margin: 0;
+    border: none;
+  } */
+  /* .logo-img>img{
+    height: 100px;
+    width: 170px;
+} */
+.menu-bar>div{
+    /* background-color: rgb(255, 255, 255); */
+    /* background-color: black; */
+    margin: 30px auto;
+    /* border: 1px solid #bbb; */
+    text-align: center;
+    /* border-radius: 10%; */
+    width: 150px;
+    height: 40px;
+    color: black;
+}
+
+
+
+.menu-bar>div>a:hover{
+   color: white; 
+   background-color: #FF7000;
+ }
+
+.menu-bar>div>a{
+    text-align: center;
+    display: block;
+    text-decoration: none;
+    line-height: 40px;
+    color: black;
+    font-family: 'IBM Plex Sans KR', sans-serif;
+    font-size: 25px;
+    width: 150px;
+    /* border-radius: 10%; */
+}
+
+.page-view{
+    /* border: 1px solid black; */
+    /* background-color: blue; */
+    /* margin-top: 5px; */
+    margin-left: 20px;
+}
+.page-title{
+    /* border: 1px solid black; */
+    height: 80px;
+    border-bottom: 1px solid #bbb;
+}
+.page-title>p{
+    margin-left: 20px;
+    height: 80px;
+    /* border: 1px solid black; */
+    line-height: 100px;
+    font-size: 80px;
+    font-family: 'Black Han Sans', sans-serif;
+    font-family: 'Dongle', sans-serif !important;
+    font-family: 'Gamja Flower', cursive;
+    font-family: 'IBM Plex Sans KR', sans-serif;
+    font-family: 'Single Day', cursive;
+    color: #FF7000;
+}
+.user-area{
+    /* border: 1px solid rebeccapurple; */
+    height: 100px;
+    border-bottom: 1px solid#bbb;
+    margin-top: 20px;
+
+}
+.user-area-container{
+    display: flex;
+    border-radius: 10%;
+    height: 50px;
+    margin-top: 5px;
+    width: 800px;
+    /* margin: 30px  auto; */
+    /* background-color:#e7e7e7; */
+
+}
+.userimg{
+    width: 60px;
+    margin-left: 100px;
+    /* background-color: black; */
+}
+.userimg>img{
+    border: 1px solid #bbb;
+    margin-top: 10px;
+    width: 70px;
+    border-radius: 10%;
+    /* background-color: black; */
+    
+}
+.username{
+    margin-left: 30px;
+}
+.username>p:first-child{
+    margin-top: 10px;
+    /* border: 1px solid black;s */
+    font-family: 'Black Han Sans', sans-serif;
+    font-family: 'Dongle', sans-serif !important;
+    font-family: 'Gamja Flower', cursive;
+    font-family: 'IBM Plex Sans KR', sans-serif;
+    font-family: 'Single Day', cursive;
+    font-size: 30px;
+}
+.username>p:last-child{
+    /* border: 1px solid black; */
+    margin-top: -10px;
+    font-family: 'Black Han Sans', sans-serif;
+    font-family: 'Dongle', sans-serif !important;
+    font-family: 'Gamja Flower', cursive;
+    font-family: 'IBM Plex Sans KR', sans-serif;
+    font-family: 'Single Day', cursive;
+    font-size: 20px;
+}
+
+.application{
+    margin-left: 400px;
+}
+.pagemove>span{
+    /* border: 1px solid #bbb; */
+    margin-top: 30px;
+
+}
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 24;
+  /* margin-top: 40px; */
+  cursor: pointer;
+}
+.siterinfo-area{
+    /* border: 1px solid black; */
+    height: 250px;
+    position: relative;
+}
+.siterinfo-area-container{
+    border: 1px solid black;
+    width: 600px;
+    margin: 30px auto;
+    height: 250px;
+    display: flex;
+    justify-content: space-around
+}
+.siterimg{
+    /* border: 1px solid black;+ */
+    /* width: 300px; */
+    margin-left: 20px;
+}
+
+.siterimg>img{
+    /* border: 1px solid black; */
+    width: 200px;
+    height: 250px;
+}
+.siter-info{
+    /* border: 1px solid black; */
+    width: 200px;
+}
+
+.siter-private-info{
+    display: flex;
+}
+.siter-private-info>li:first-child{
+    font-size: 25px;
+    padding: 10px;
+}
+
+.siter-private-info>li:nth-last-child(2){
+    margin-top: 18px;
+    margin-left: 20px;
+    color: #666;
+}
+.siter-private-info>li:last-child{
+    margin-top: 18px;
+    margin-left: 5px;
+    color: #666;
+}
+.siter-detail-info>p{
+    /* border: 1px solid black; */
+    /* text-align: center; */
+    margin-left: 12px;
+    margin-top: -5px;
+    font-size: 13px;
+    color: #666;
+}
+
+.siter-prove{
+    margin-top: 20px;
+    /* border: 1px solid black; */
+    display: flex;
+    justify-content: space-around;
+    
+    /* 차후 3가지 이상으로 할시 flex-warp 사용해서 현재 창크기에 맞춰 
+    들어갈수 있게 조절 */
+}
+.siter-prove>li>img{
+    width: 40px;
+    height: 40px;
+}
+.siter-situation{
+    /* border: 1px solid black; */
+    text-align: right;
+    margin-top: 50px;
+   
+
+}
+.siter-situation>span{
+    border: 1px solid #FF7000;
+    display: inline-block;
+    width: 150px;
+    text-align: center;
+    font-family: 'Black Han Sans', sans-serif;
+    font-family: 'Dongle', sans-serif !important;
+    font-family: 'Gamja Flower', cursive;
+    font-family: 'IBM Plex Sans KR', sans-serif;
+    font-family: 'Single Day', cursive;
+    font-size: 40px;
+    color: #FF7000;
+    background-color:white;
+    cursor: pointer;
+}
+
+
+.review-area{
+    /* border: 1px solid black; */
+    height: 390px;
+    width: 800px;
+    margin-top: 30px;
+}
+.reviewtab-area{
+    /* border: 1px solid black; */
+    margin-top: 20px;
+    padding: 10px;
+}
+.reviewtab-area>span{
+    font-family: 'Black Han Sans', sans-serif;
+    font-family: 'Dongle', sans-serif !important;
+    font-family: 'Gamja Flower', cursive;
+    font-family: 'IBM Plex Sans KR', sans-serif;
+    font-family: 'Single Day', cursive;
+    font-size: 30px;
+    border: 1px solid #bbb;
+    cursor: pointer;
+}
+.review-list-area{
+    border: 1px solid black;
+    height: 300px;
+    width: 800px;
+    
+   
+}
+
+.table{
+    /* border: 1px solid red; */
+    /* background-color: yellowgreen; */
+    width: 800px;
+    border-collapse: collapse;
+    
+   
+}
+
+.top{
+    border-bottom: 1px solid black;
+    /* border: 1px solid black; */
+    
+}
+
+
+
+.review-text>td{
+    /* border: 1px solid black; */
+    border-collapse: collapse;
+    font-size: 20px;
+    text-align: center;
+    border-left: none;
+    border-right: none;
+    border-bottom: 1px solid #bbb;
+}
+.review-num{
+    width: 100px;
+    /* border: none; */
+}
+.review-title{
+    width: 500px;
+    /* border: none; */
+    
+}
+.review-title>a{
+   color: black;
+}
+.review-data{
+    width: 100px;
+    /* border: none; */
+}
+
+.paging{
+    /* border: 1px solid black; */
+    margin-top: 10px;
+
+}
+.page{
+    display: flex;
+    margin: auto;
+    /* border: 1px solid rebeccapurple; */
+    text-align: center;
+    justify-content: center;
+    /* padding: 10px; */
+}
+.page>a{
+    border: 1px solid black;
+    margin: 5px;
+    width: 20px;
+    text-align: center;
+    font-weight: bold;
+    /* background-color: #e6e6e6; */
+    border: 1px solid #bbb;
+}
+
+/*css 비슷한 지점*/
+
+.review-list-area1{
+    border: 1px solid black;
+    height: 300px;
+    width: 800px;
+    display: none;
+   
+}
+
+.table1{
+    /* border: 1px solid red; */
+    /* background-color: yellowgreen; */
+    width: 800px;
+    border-collapse: collapse;
+    
+   
+}
+
+.review-text1>td{
+    border: 1px solid black;
+    border-collapse: collapse;
+    font-size: 20px;
+    text-align: center;
+    border-left: none;
+    border-right: none;
+    border-bottom: 1px solid #bbb;
+}
+.review-num1{
+    width: 100px;
+    border: none;
+}
+.review-title1{
+    width: 500px;
+    border: none;
+    
+}
+.review-title1>a{
+   color: black;
+}
+.review-data1{
+    width: 100px;
+    border: none;
+}
+
+.paging1{
+    /* border: 1px solid black; */
+    margin-top: 10px;
+
+}
+.page1{
+    display: flex;
+    margin: auto;
+    /* border: 1px solid rebeccapurple; */
+    text-align: center;
+    justify-content: center;
+    /* padding: 10px; */
+    text-decoration: none;
+}
+.page1>a{
+    border: 1px solid black;
+    margin: 5px;
+    width: 20px;
+    text-align: center;
+    font-weight: bold;
+    /* background-color: #e6e6e6; */
+    border: 1px solid #bbb;
+}
+
+/*모달 css*/
+.modal-pay{
+    display: none;
+    position: absolute;
+    top: -200px;
+    left: 10px;
+    border: 1px solid black;
+    background-color: white;
+}
+.pay-name{
+    /* border-bottom: 1px solid black; */
+    padding-left: 10px;
+    padding-bottom: 5px;
+    /* background-color: #FF7000; */
+}
+.payment-wrap{
+    
+    margin-top: 5px;
+    /* border: 1px solid black; */
+    display: flex;
+    width: 700px;
+   
+}
+
+.payment-wrap-left{
+    margin-left: 10px;
+    /* border: 1px solid black; */
+    padding: 10px 10px;
+}
+
+.user-detail{
+    text-decoration: none;
+    /* border: 1px solid black; */
+    list-style: none;
+    
+}
+
+
+.user-info{
+    /* border: 1px solid black; */
+    height: 30px;
+    font-size: 20px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #666;
+    font-weight: bold;
+}
+
+.user{
+    /* border: 1px solid black; */
+    height: 150px;
+    /* border: 1px solid black; */
+    border-radius: 5px;
+    padding: 10px;
+    /* background-color: #e6e6e6; */
+    margin-top: 8px;
+
+}
+
+.user p:first-child{
+    /* border: 1px solid black; */
+    margin-top: 5px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.user-private-area{
+    /* border: 1px solid black; */
+    margin-top: 5px;
+    display: flex;
+    justify-content: space-between;
+  
+
+}
+.user-private-area span{
+    width: 120px;
+    border-radius: 5px;
+    text-align: center;
+    margin-top: 5px;
+
+}
+
+.user-name{
+    border: 1px solid #666;
+    display: inline-block;
+    width: 100px;
+    height: 30px;
+    line-height: 30px;
+    
+}
+
+.user-phone{
+    border: 1px solid #666;
+    height: 30px;
+    line-height: 30px;
+    margin-left: 5px;
+
+}
+
+
+.user-email{
+    border-radius: 5px;
+    border: 1px solid #666; 
+    font-size: 18px;
+    margin-top: 10px;
+    height: 30px;
+    line-height: 30px;
+
+
+}
+
+.user-address{
+    /* border: 1px solid black; */
+}
+
+.user-address p:first-child{
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.address{
+    /* border: 1px solid black; */
+    margin-top: 8px;
+    font-size: 18px;
+    font-weight: bold;
+
+}
+
+.address-info{
+    border: 1px solid #666;
+    border-radius: 5px;
+    height: 30px;
+    line-height: 30px;
+    margin-top: 8px;
+}
+
+.address-detail{
+    border: 1px solid #666;
+    border-radius: 5px;
+    height: 30px;
+    line-height: 30px;
+    margin-top: 10px;
+
+}
+
+.payment-wrap-right{
+    border-left: 1px solid black;
+    padding: 10px 10px;
+    margin-left: 10px;
+    width: 500px;
+}
+
+.product-info{
+    list-style: none;
+}
+
+.product-info li{
+    /* border-left: 1px solid black; */
+    margin-bottom: 8px;
+}
+
+.product-detail{
+
+    border-bottom: 1px solid #666;
+    padding-bottom: 10px;
+}
+
+.product-detail p{
+    margin-top: 5px;
+
+}
+
+.product-title{
+    font-weight: bold;
+
+}
+
+.pay{
+    /* border: 1px solid black; */
+    /* width: 170px; */
+    /* float: right; */
+    text-align: right;
+}
+
+.pay span:first-child{
+    font-weight: bold;
+}
+
+.total-payment{
+    /* border: 1px solid black; */
+    /* margin-top: 20px; */
+    text-align: right;
+    height: 40px;
+}
+
+.total-payment span{
+    line-height: 50px;
+    font-size: 20px;
+
+}
+
+
+.total-area{
+    /* border: 1px solid black; */
+    height: 40px;
+}
+
+.check-area{
+
+    /* border: 1px solid black; */
+    text-align: right;
+    margin-top: 15px;
+}
+.check-area button{
+    height: 40px;
+    width: 200px;
+    font-size: 25px;
+    background-color: white;
+    color: #FF7000;
+    border: 1px solid #FF7000;
+}

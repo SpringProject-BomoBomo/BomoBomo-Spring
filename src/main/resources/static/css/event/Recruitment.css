@@ -1,0 +1,322 @@
+
+.main {
+    width: 100%;    
+    height: 100%;
+    min-height: 100vm;   
+    } 
+    
+     .banner1-container {        
+        width: 100%;
+        height: 500px;
+        max-height: 800px;
+        position: relative;
+    }
+
+    .banner1-container img{
+        margin: 0 auto;
+        width: 100%;
+        height: 100%;
+        min-width: 1024px;
+        max-height: 800px;   
+    } 
+    
+    .banner1-letter-container {
+        width: 100%;
+        height: 100%;
+        box-sizing: border-box; /* 패딩 처리된 부분 영역이 안커지게 만듬*/
+        position: absolute; /* 텍스트를 절대 위치로 설정하여 오버레이 */
+        top: 50%; /* 상단을 기준으로 세로 중앙으로 이동 */
+        left: 50%; /* 왼쪽을 기준으로 가로 중앙으로 이동 */
+        transform: translate(-50%, -50%); /* 중앙 정렬 */
+        text-align: center; /* 텍스트를 가로 중앙 정렬 */
+        background-color: rgba(0, 0, 0, 0.7); /* 텍스트 배경색 설정 (원하는 색상으로 변경) */
+        padding: 20px; /* 텍스트 주위에 여백 추가 (원하는 크기로 변경) */
+        color: white; /* 텍스트 색상 설정 (원하는 색상으로 변경) */
+        font-size: 24px;
+        /* border: 2px solid red; */
+    }
+    
+    .main-letter {
+        /* border: 2px solid blue; */
+       
+        margin: 0 auto;
+        width: 1024px;
+        height: 100%;
+    }
+    
+    .main-letter dl{
+        font-size: 33px;
+        line-height: 1.5;
+        font-family: 'Black Han Sans', sans-serif;
+        font-family: 'Dongle', sans-serif !important;
+        font-family: 'Gamja Flower', cursive;
+        font-family: 'IBM Plex Sans KR', sans-serif;
+        font-family: 'Single Day', cursive;
+    }
+    
+    .main-sub-latter {
+        width: 100%;
+        height: 550px;
+        background-color: rgb(255, 255, 255);
+        
+       
+    }
+
+    .main-sub-latter-container{
+        display: flex;
+        background-color: rgb(255, 255, 255);  
+        width: 1024px;
+        margin: 0 auto;   
+    }
+
+    .aaa {
+        width: 30%;
+        height: 450px;
+        background-color: rgb(255, 255, 255);
+        line-height: 1.8;
+    }
+
+    .bbb {
+        width: 70%;
+        height: 450px;
+        background-color: rgb(255, 255, 255);
+        
+        
+    }
+    .aaa dd,
+    .aaa dt {
+        font-weight : bold;
+        font-size: 25px;
+    }
+
+    .bbb dt{
+        font-weight : bold;
+        font-size: 25px;
+        line-height: 1.8;
+    }
+    
+    .bbb dl{
+        color: rgb(92, 92, 92);
+        font-weight : bold;
+        font-size: 16px;
+        line-height: 2.3;
+    }
+
+  
+    .banner2-container {        
+        width: 100%;
+        height: 500px;
+        max-height: 800px;
+        position: relative;
+    }
+
+    .banner2-container img{
+        margin: 0 auto;
+        width: 100%;
+        height: 100%;
+        min-width: 1024px;
+        max-height: 800px;   
+    } 
+    
+    .banner2-quest-container {
+        width: 100%;
+        height: 100%;
+        box-sizing: border-box; /* 패딩 처리된 부분 영역이 안커지게 만듬*/
+        position: absolute; /* 텍스트를 절대 위치로 설정하여 오버레이 */
+        top: 50%; /* 상단을 기준으로 세로 중앙으로 이동 */
+        left: 50%; /* 왼쪽을 기준으로 가로 중앙으로 이동 */
+        transform: translate(-50%, -50%); /* 중앙 정렬 */
+        text-align: center; /* 텍스트를 가로 중앙 정렬 */
+        background-color: rgba(0, 0, 0, 0.7); /* 텍스트 배경색 설정 (원하는 색상으로 변경) */
+        padding: 20px; /* 텍스트 주위에 여백 추가 (원하는 크기로 변경) */
+        color: white; /* 텍스트 색상 설정 (원하는 색상으로 변경) */
+        font-size: 24px;
+        /* border: 2px solid red; */
+    }
+    
+    .banner2-quest {
+        /* border: 2px solid blue; */
+        margin: 0 auto;
+        width: 1024px;
+        height: 100%;
+        position: relative;
+    }
+
+    .banner2-quest dl {
+        text-align: center; /* 텍스트를 가로 중앙 정렬 */
+        position: absolute; /* 절대 위치 설정 */
+        top: 50%; /* 상단을 기준으로 세로 중앙으로 이동 */
+        left: 50%; /* 왼쪽을 기준으로 가로 중앙으로 이동 */
+        transform: translate(-50%, -50%); /* 중앙 정렬 */
+    }
+    
+    .banner2-quest dt{
+        font-size: 50px;
+        line-height: 1.5;
+        font-family: 'Black Han Sans', sans-serif;
+        font-family: 'Dongle', sans-serif !important;
+        font-family: 'Gamja Flower', cursive;
+        font-family: 'IBM Plex Sans KR', sans-serif;
+        font-family: 'Single Day', cursive;
+    }
+
+    .banner2-quest dd{
+        font-size: 40px;
+        line-height: 1.5;
+        font-family: 'Black Han Sans', sans-serif;
+        font-family: 'Dongle', sans-serif !important;
+        font-family: 'Gamja Flower', cursive;
+        font-family: 'IBM Plex Sans KR', sans-serif;
+        font-family: 'Single Day', cursive;
+    }
+
+    .banner2-latter {
+        width: 100%;
+        height: 500px;
+        background-color: rgb(255, 255, 255);
+        
+    }
+
+    .banner2-latter-container{
+        display: flex;
+        background-color: rgb(255, 255, 255);
+        width: 1024px;
+        height: 400px;
+        margin: 0 auto;
+    }
+    
+    .ccc {
+        width: 30%;
+        height: 400px;
+        background-color: rgb(255, 255, 255);  
+        line-height: 1.5;  
+    }
+
+    .ddd {
+        width: 70%;
+        height: 400px;
+        background-color: rgb(255, 255, 255);
+        
+    }
+    .ccc dd,
+    .ccc dt {
+        font-weight : bold;
+        font-size: 25px;
+    }
+
+    .ddd dd{
+        color: rgb(92, 92, 92);
+        font-weight : bold;
+        font-size: 16px;
+        line-height: 2.2;
+    }
+
+
+    .banner3-latter {
+        width: 100%;
+        height: 500px;
+        background-color: rgb(255, 255, 255);
+        
+    }
+
+    .banner3-latter-container{
+        display: flex;
+        background-color: rgb(255, 255, 255);
+        width: 1024px;
+        height: 400px;
+        margin: 0 auto;
+    }
+    
+    .eee {
+        width: 30%;
+        height: 400px;
+        background-color: rgb(255, 255, 255);    
+    }
+
+    .fff {
+        width: 70%;
+        height: 400px;
+        background-color: rgb(255, 255, 255);
+        
+    }
+    .eee dd,
+    .eee dt {
+        font-weight : bold;
+        font-size: 25px;
+        line-height: 1.8;
+    }
+    .fff dt{
+        color: rgb(34, 34, 34);
+        font-weight : bold;
+        font-size: 18px;
+        line-height: 1.8;
+        
+    }
+    .fff dd{
+        color: rgb(92, 92, 92);
+        font-weight : bold;
+        font-size: 16px;
+        line-height: 2.2;
+    }
+
+    .banner3-container {        
+        width: 100%;
+        height: 500px;
+        max-height: 800px;
+        position: relative;
+    }
+
+    .banner3-container img{
+        margin: 0 auto;
+        width: 100%;
+        height: 100%;
+        min-width: 1024px;
+        max-height: 800px;   
+    } 
+    
+    .banner3-quest-container {
+        width: 100%;
+        height: 100%;
+        box-sizing: border-box; /* 패딩 처리된 부분 영역이 안커지게 만듬*/
+        position: absolute; /* 텍스트를 절대 위치로 설정하여 오버레이 */
+        top: 50%; /* 상단을 기준으로 세로 중앙으로 이동 */
+        left: 50%; /* 왼쪽을 기준으로 가로 중앙으로 이동 */
+        transform: translate(-50%, -50%); /* 중앙 정렬 */
+        text-align: center; /* 텍스트를 가로 중앙 정렬 */
+        background-color: rgba(0, 0, 0, 0.7); /* 텍스트 배경색 설정 (원하는 색상으로 변경) */
+        padding: 20px; /* 텍스트 주위에 여백 추가 (원하는 크기로 변경) */
+        color: white; /* 텍스트 색상 설정 (원하는 색상으로 변경) */
+        font-size: 24px;
+        /* border: 2px solid red; */
+    }
+    
+    .banner3-quest {
+        /* border: 2px solid blue; */
+        margin: 0 auto;
+        width: 1024px;
+        height: 100%;
+        position: relative;
+    }
+
+    .banner3-quest dl {
+        text-align: center; /* 텍스트를 가로 중앙 정렬 */
+        position: absolute; /* 절대 위치 설정 */
+        top: 50%; /* 상단을 기준으로 세로 중앙으로 이동 */
+        left: 50%; /* 왼쪽을 기준으로 가로 중앙으로 이동 */
+        transform: translate(-50%, -50%); /* 중앙 정렬 */
+    }
+    
+    .banner3-quest dt{
+        font-size: 50px;
+        line-height: 1.5;
+        font-family: 'Black Han Sans', sans-serif;
+        font-family: 'Dongle', sans-serif !important;
+        font-family: 'Gamja Flower', cursive;
+        font-family: 'IBM Plex Sans KR', sans-serif;
+        font-family: 'Single Day', cursive;
+    }
+
+    
+
+    
+    

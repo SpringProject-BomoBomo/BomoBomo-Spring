@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>관리자 페이지</title>
+    <link rel="stylesheet" href="../css/admin_emp_config.css">
+</head>
+<body>
+    <!-- 전체 컨테이너 -->
+    <div class="admin-container">
+        <!-- 사이드 컨테이너 -->
+        <div class="side-container">
+            <div class="side-logo-box">
+                   <img class="logo" src="../img/logo.png" alt="logo">
+            </div>
+            <ul class="side-item-container">
+                <li class="side-item" ><a href="admin_main.html">대시보드</a></li>
+                <li class="side-item"><a href ="admin_user.html">회원정보</a></li>
+                <li class="side-item on"><a href="admin_emp.html">직원관리</a></li>
+                <li class="side-item"><a href="admin_match.html">매칭관리</a></li>
+                <li class="side-item"><a href="admin_event.html">이벤트관리</a></li>
+                <li class="side-item"><a href="admin_announce.html">공지사항</a></li>
+            </ul>
+        </div>
+
+        <!-- 메인 컨테이너 -->
+        <div class="main-container">
+            <!-- 메인 헤더 -->
+            <div class="main-header">
+                <span class="main-header-title">BomoBomo</span>
+                <span class="admin-name">admin</span>
+                <button class="main-header-exit">나가기</button>
+            </div>
+            <!-- 메인 컨텐츠 -->
+            <div class="main-contents">
+                <div class="contents-title">
+                    <span class="main-contents-title-text">직원관리</span>
+                </div>
+                <form action="#" method="post" enctype="multipart/form-data">
+                <div class="emp-detail-container">
+                    <div class="emp-info-container1">
+                        <div class="img">
+                            <canvas id="image-preview"></canvas>
+                                <input type="file" name="image" id="image-input" onchange="displayResizedImage()">
+                        </div>
+                        <div class="info">
+                            <label for="name">이름:</label>
+                            <input type="text" id="name" name="name" value="김성찬"required><br><br>
+                    
+                            <label for="age">나이:</label>
+                            <input type="text" id="age" name="age" value="27" required><br><br>
+                            <label for="gender">성별:</label>
+                            <select id="gender" name="gender">
+                                <option value="male">남성</option>
+                                <option value="female">여성</option>
+                            </select><br><br>
+                    
+                            <label for="contact">연락처:</label>
+                            <input type="text" id="contact" value="01071921375" name="contact"><br><br>
+                    
+                            <label for="email">이메일:</label>
+                            <input type="email" id="email" value="zriag@naver.com" name="email" required><br><br>
+                        </div>
+                    </div>
+                    <div class="emp-info-container2">
+                        <div class="introduction">
+                            <div class="title">간단 자기소개</div>
+                            <textarea id="selfint" name="selfint" required>안녕하세요</textarea>
+                        </div>
+                    </div>
+                    <div class="submit-button">
+                        <button>제출</button>
+                    </div>
+                </div>
+            </form>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="../js/admin_emp_config.js"></script>
+</html>

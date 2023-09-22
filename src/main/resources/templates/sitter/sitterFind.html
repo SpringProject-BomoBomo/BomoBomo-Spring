@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="ko" xmlns:th="http://www.thymeleaf.org">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/common/css/header.css" />
+    <link rel="stylesheet" href="/common/css/footer.css" />
+    <link rel="stylesheet" href="/common/css/common.css" />
+    <script src="/common/js/index.js" defer></script>
+    <script src="/common/js/common.js" defer></script>
+
+    <link rel="stylesheet" href="../css/sitterFind.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css" />
+    <title>BOMOBOMO</title>
+</head>
+
+<body>
+
+    <div>
+        <!-- 헤더 -->
+        <div class="header">
+        </div>
+        <!-- 헤더 -->
+
+        <!-- <div class="modal">
+            <div class="modalHeader">
+                <div class=" modalX">X</div>
+            </div>
+            <div class="modalContent">
+
+            </div>
+        </div> -->
+
+        <div class="container">
+            <!-- 지역 및 등록된 시터 수 -->
+            <div class="mainHeader">
+                <div class="sitterFindGreeting">
+                    <label>&nbsp;대기중인 시터 리스트</label>
+                </div>
+                <div class="sitterFindCount">
+                    n명의 시터(직원)
+                </div>
+            </div>
+            <!-- 지역 및 등록된 시터 수 -->
+
+            <!-- 시터 정보 필터 -->
+
+
+            <div id="wrap">
+                <a href="javascript:openModal('modal1');" class="button modal-open">지역 검색하기▼</a>
+                <a href="javascript:openModal('modal2');" class="button modal-open">돌봄 일정▼</a>
+            </div>
+
+            <div id="modal"></div>
+
+
+            <div class="sitterFilter">
+                <!-- 시터 정보 필터 -->
+
+                <!-- 시터 정보 리스트 -->
+                <div class="sitterInfoList">
+
+                    <div class="sitterIndividual">
+                        <a href="../html/sitterInfo.html">
+                            <div>
+                                <div class="sitterInfoAndImg test">
+                                    <div class="sitterInfo">
+                                        <div>보오노</div>
+                                        <div>희망시급13,000원</div>
+                                        <div>후기 ✯4.4/5</div>
+                                    </div>
+                                    <div class="sitterImg">
+                                        <img
+                                            src="https://search.pstatic.net/common?type=b&amp;size=216&amp;expire=1&amp;refresh=true&amp;quality=100&amp;direct=true&amp;src=http%3A%2F%2Fsstatic.naver.net%2Fpeople%2Fportrait%2F202207%2F20220727155425320.jpg">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="sitterContext">
+                                <span>이러쿵 저러쿵 이러쿵 저러쿵 이러쿵 저러쿵 이러쿵 저러쿵 이러쿵 저러쿵 이러쿵 저러쿵 </span>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="sitterIndividual">
+
+                        <div>
+                            <div class="sitterInfoAndImg test">
+                                <div class="sitterInfo">
+                                    <div>보오노</div>
+                                    <div>희망시급13,000원</div>
+                                    <div>후기 ✯4.4/5</div>
+                                </div>
+                                <div class="sitterImg">
+                                    <img
+                                        src="https://search.pstatic.net/common?type=b&amp;size=216&amp;expire=1&amp;refresh=true&amp;quality=100&amp;direct=true&amp;src=http%3A%2F%2Fsstatic.naver.net%2Fpeople%2Fportrait%2F202006%2F20200609190539136.jpg">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="sitterContext">
+                            <a href="#">
+                                <span>처음으로 진행하는 시터 뭐 할 줄 안데요.</span>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="sitterIndividual">
+                        <div>
+                            <div class="sitterInfoAndImg test">
+                                <div class="sitterInfo">
+                                    <div>노오보</div>
+                                    <div>희망시급13,000원</div>
+                                    <div>후기 ✯4.4/5</div>
+                                </div>
+                                <div class="sitterImg">
+                                    <img
+                                        src="https://search.pstatic.net/common/?src=http%3A%2F%2Fimgnews.naver.net%2Fimage%2F025%2F2023%2F05%2F04%2F0003277790_001_20230504093301043.jpg&amp;type=a340">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="sitterContext">
+                            <a href="#">
+                                <span>최고의 시터 지금 당장 예약하지 않으면 다신 만날 수 없습니다. 지금 바로 연결 신청하세요</span>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="sitterIndividual">
+                        <div>
+                            <div class="sitterInfoAndImg test">
+                                <div class="sitterInfo">
+                                    <div>노보오</div>
+                                    <div>희망시급13,000원</div>
+                                    <div>후기 ✯4.4/5</div>
+                                </div>
+                                <div class="sitterImg">
+                                    <img
+                                        src="https://search.pstatic.net/common?type=b&amp;size=216&amp;expire=1&amp;refresh=true&amp;quality=100&amp;direct=true&amp;src=http%3A%2F%2Fsstatic.naver.net%2Fpeople%2F37%2F201604181854386741.jpg">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="sitterContext">
+                            <a href="#">
+                                <span>아이 돌봄 만렙, 교육도 만렙 하나부터 열까지 마음 편하게 안심하고 맏기세요!!!!!!!!!</span>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="sitterIndividual">
+                        <div>
+                            <div class="sitterInfoAndImg test">
+                                <div class="sitterInfo">
+                                    <div>보오노</div>
+                                    <div>희망시급13,000원</div>
+                                    <div>후기 ✯4.4/5</div>
+                                </div>
+                                <div class="sitterImg">
+                                    <img
+                                        src="https://search.pstatic.net/common?type=b&amp;size=216&amp;expire=1&amp;refresh=true&amp;quality=100&amp;direct=true&amp;src=http%3A%2F%2Fsstatic.naver.net%2Fpeople%2Fportrait%2F202207%2F20220727155425320.jpg">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="sitterContext">
+                            <a href="#">
+                                <span>이러쿵 저러쿵 이러쿵 저러쿵 이러쿵 저러쿵 이러쿵 저러쿵 이러쿵 저러쿵 이러쿵 저러쿵 </span>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="sitterIndividual">
+
+                        <div>
+                            <div class="sitterInfoAndImg test">
+                                <div class="sitterInfo">
+                                    <div>보오노</div>
+                                    <div>희망시급13,000원</div>
+                                    <div>후기 ✯4.4/5</div>
+                                </div>
+                                <div class="sitterImg">
+                                    <img
+                                        src="https://search.pstatic.net/common?type=b&amp;size=216&amp;expire=1&amp;refresh=true&amp;quality=100&amp;direct=true&amp;src=http%3A%2F%2Fsstatic.naver.net%2Fpeople%2Fportrait%2F202006%2F20200609190539136.jpg">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="sitterContext">
+                            <a href="#">
+                                <span>처음으로 진행하는 시터 뭐 할 줄 안데요.</span>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="sitterIndividual">
+                        <div>
+                            <div class="sitterInfoAndImg test">
+                                <div class="sitterInfo">
+                                    <div>노오보</div>
+                                    <div>희망시급13,000원</div>
+                                    <div>후기 ✯4.4/5</div>
+                                </div>
+                                <div class="sitterImg">
+                                    <img
+                                        src="https://search.pstatic.net/common/?src=http%3A%2F%2Fimgnews.naver.net%2Fimage%2F025%2F2023%2F05%2F04%2F0003277790_001_20230504093301043.jpg&amp;type=a340">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="sitterContext">
+                            <a href="#">
+                                <span>최고의 시터 지금 당장 예약하지 않으면 다신 만날 수 없습니다. 지금 바로 연결 신청하세요</span>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="sitterIndividual">
+                        <div>
+                            <div class="sitterInfoAndImg test">
+                                <div class="sitterInfo">
+                                    <div>노보오</div>
+                                    <div>희망시급13,000원</div>
+                                    <div>후기 ✯4.4/5</div>
+                                </div>
+                                <div class="sitterImg">
+                                    <img
+                                        src="https://search.pstatic.net/common?type=b&amp;size=216&amp;expire=1&amp;refresh=true&amp;quality=100&amp;direct=true&amp;src=http%3A%2F%2Fsstatic.naver.net%2Fpeople%2F37%2F201604181854386741.jpg">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="sitterContext">
+                            <a href="#">
+                                <span>아이 돌봄 만렙, 교육도 만렙 하나부터 열까지 마음 편하게 안심하고 맏기세요!!!!!!!!!</span>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="sitterIndividual">
+                        <div>
+                            <div class="sitterInfoAndImg test">
+                                <div class="sitterInfo">
+                                    <div>보오노</div>
+                                    <div>희망시급13,000원</div>
+                                    <div>후기 ✯4.4/5</div>
+                                </div>
+                                <div class="sitterImg">
+                                    <img
+                                        src="https://search.pstatic.net/common?type=b&amp;size=216&amp;expire=1&amp;refresh=true&amp;quality=100&amp;direct=true&amp;src=http%3A%2F%2Fsstatic.naver.net%2Fpeople%2Fportrait%2F202207%2F20220727155425320.jpg">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="sitterContext">
+                            <a href="#">
+                                <span>이러쿵 저러쿵 이러쿵 저러쿵 이러쿵 저러쿵 이러쿵 저러쿵 이러쿵 저러쿵 이러쿵 저러쿵 </span>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="sitterIndividual">
+
+                        <div>
+                            <div class="sitterInfoAndImg test">
+                                <div class="sitterInfo">
+                                    <div>보오노</div>
+                                    <div>희망시급13,000원</div>
+                                    <div>후기 ✯4.4/5</div>
+                                </div>
+                                <div class="sitterImg">
+                                    <img
+                                        src="https://search.pstatic.net/common?type=b&amp;size=216&amp;expire=1&amp;refresh=true&amp;quality=100&amp;direct=true&amp;src=http%3A%2F%2Fsstatic.naver.net%2Fpeople%2Fportrait%2F202006%2F20200609190539136.jpg">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="sitterContext">
+                            <a href="#">
+                                <span>처음으로 진행하는 시터 뭐 할 줄 안데요.</span>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="sitterIndividual">
+                        <div>
+                            <div class="sitterInfoAndImg test">
+                                <div class="sitterInfo">
+                                    <div>노오보</div>
+                                    <div>희망시급13,000원</div>
+                                    <div>후기 ✯4.4/5</div>
+                                </div>
+                                <div class="sitterImg">
+                                    <img
+                                        src="https://search.pstatic.net/common/?src=http%3A%2F%2Fimgnews.naver.net%2Fimage%2F025%2F2023%2F05%2F04%2F0003277790_001_20230504093301043.jpg&amp;type=a340">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="sitterContext">
+                            <a href="#">
+                                <span>최고의 시터 지금 당장 예약하지 않으면 다신 만날 수 없습니다. 지금 바로 연결 신청하세요</span>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="sitterIndividual">
+                        <div>
+                            <div class="sitterInfoAndImg test">
+                                <div class="sitterInfo">
+                                    <div>노보오</div>
+                                    <div>희망시급13,000원</div>
+                                    <div>후기 ✯4.4/5</div>
+                                </div>
+                                <div class="sitterImg">
+                                    <img
+                                        src="https://search.pstatic.net/common?type=b&amp;size=216&amp;expire=1&amp;refresh=true&amp;quality=100&amp;direct=true&amp;src=http%3A%2F%2Fsstatic.naver.net%2Fpeople%2F37%2F201604181854386741.jpg">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="sitterContext">
+                            <a href="#">
+                                <span>아이 돌봄 만렙, 교육도 만렙 하나부터 열까지 마음 편하게 안심하고 맏기세요!!!!!!!!!</span>
+                            </a>
+                        </div>
+                    </div>
+
+
+                </div>
+                <!-- 시터 정보 리스트 -->
+
+            </div>
+            <!-- 페이징 -->
+            <div>
+                <ul class="paging">
+                    <a href="" class="page">
+                        <li class="pageNum prev">&lt</li>
+                    </a>
+                    <a href="" class="page">
+                        <li class="pageNum active">1</li>
+                    </a>
+                    <a href="" class="page">
+                        <li class="pageNum">2</li>
+                    </a>
+                    <a href="" class="page">
+                        <li class="pageNum">3</li>
+                    </a>
+                    <a href="" class="page">
+                        <li class="pageNum next">&gt</li>
+                    </a>
+                </ul>
+            </div>
+            <!-- /페이징 -->
+
+        </div>
+        <div class="footer">
+        </div>
+
+        <div class="modal-con modal1">
+
+            <!-- <p class="title"><strong>가능한 일들</strong></p> -->
+            <div class="sitterInfoType">
+                <div class="areaSel">
+                    <label>돌봄지역 선택</label>
+                    <a href="javascript:;" class="close addrModal">X</a>
+                </div>
+                <div class="areaSelList">
+                    <select name="sido1" id="sido1" class="addrSelList"></select>
+                    <select name="gugun1" id="gugun1" class="addrSelList"></select>
+                </div>
+                <div class="sitterSel">
+                    <button class="sitterTerBtn">활동 선택</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal-con modal2">
+            <a href="javascript:;" class="close">X</a>
+            <p class="title">돌봄일정</p>
+            <div class="con">
+                <div class="sitterDay">
+                    <div><h2>돌봄 요일</h2></div>
+                    <div class="mons">
+                        <div class="mon">월<input type="hidden" value="월"></div>
+                        <div class="mon">화</div>
+                        <div class="mon">수</div>
+                        <div class="mon">목</div>
+                        <div class="mon">금</div>
+                        <div class="mon">토</div>
+                        <div class="mon">일</div>
+                    </div>
+                </div>
+
+                <div class="sitterTimes">
+                    <div><h2>돌봄 시간</h2></div>
+                    <div class="times">
+                        <div class="sitterTime">오전(07~12)</div>
+                        <div class="sitterTime">오후(12~18)</div>
+                        <div class="sitterTime">저녁(18~22)</div>
+                    </div>
+                </div>
+
+                <div class="sitterSel">
+                    <button class="sitterTerBtn">일정 선택</button>
+                </div>
+            </div>
+        </div>
+
+        <div id="modal"></div>
+
+    </div>
+
+
+
+    <script src="https://code.jquery.com/jquery-3.6.4.js"></script>
+    <script src="../js/sitterFind.js"></script>
+
+
+</body>
+
+</html>

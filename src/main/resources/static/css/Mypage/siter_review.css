@@ -1,0 +1,253 @@
+@import url("https://fonts.googleapis.com/css?family=Luckiest+Guy&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Black+Han+Sans&family=Dongle&family=Gamja+Flower&family=IBM+Plex+Sans+KR&family=Single+Day&display=swap');
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+
+main{
+   
+    margin-top: 45px;
+  
+}
+
+
+.container{
+    width: 1024px;
+    height: 100%;
+    /* border: 1px solid black;   */
+    margin: 30px auto;
+      
+}
+.section{
+    margin: 0 auto;
+    /* border: 1px solid blue; */
+    height: 100%;
+    /* width: 1024px; */
+    display: flex;
+    /* background-color: #e6e6e6; */
+}
+.menu-bar{
+    /* display: flex;
+    flex-direction: column;
+    justify-content: center; */
+    /* border: 1px solid #bbb; */
+    /* background-color: red; */
+    height: 900px;
+    width: 180px;
+    margin-left: 10px;
+    margin-bottom: 15px;
+}
+/* .menu-bar>div:first-child{
+    width: 180px;
+    height: 100px;
+    margin: 0;
+    border: none;
+  } */
+  /* .logo-img>img{
+    height: 100px;
+    width: 170px;
+} */
+.menu-bar>div{
+    /* background-color: rgb(255, 255, 255); */
+    /* background-color: black; */
+    margin: 30px auto;
+    /* border: 1px solid #bbb; */
+    text-align: center;
+    /* border-radius: 10%; */
+    width: 150px;
+    height: 40px;
+    color: black;
+}
+
+
+
+.menu-bar>div>a:hover{
+   color: white; 
+   background-color: #FF7000;
+ }
+
+.menu-bar>div>a{
+    text-align: center;
+    display: block;
+    text-decoration: none;
+    line-height: 40px;
+    color: black;
+   
+    font-family: 'IBM Plex Sans KR', sans-serif;
+    
+    font-size: 25px;
+    width: 150px;
+    /* border-radius: 10%; */
+}
+
+.page-view{
+    /* border: 1px solid black; */
+    /* background-color: blue; */
+    /* margin-top: 5px; */
+    margin-left: 20px;
+    width: 900px;
+}
+.page-title{
+    /* border: 1px solid black; */
+    height: 80px;
+    border-bottom: 1px solid #bbb;
+}
+.page-title>p{
+    margin-left: 20px;
+    height: 80px;
+    /* border: 1px solid black; */
+    line-height: 100px;
+    font-size: 80px;
+    font-family: 'Black Han Sans', sans-serif;
+    font-family: 'Dongle', sans-serif !important;
+    font-family: 'Gamja Flower', cursive;
+    font-family: 'IBM Plex Sans KR', sans-serif;
+    font-family: 'Single Day', cursive;
+    color: #FF7000;
+}
+.page-title>p>a{
+    text-decoration: none;
+     color: #FF7000;
+}
+.review-container{
+    /* border: 1px solid black; */
+    display: flex;
+    justify-content: center;
+}
+.new-post-form{
+    /* border: 1px solid red; */
+   /* text-align: center; */
+}
+.form-group {
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+
+label {
+    /* border: 1px solid black; */
+    display: block;
+    margin-bottom: 5px;
+}
+
+.title p{
+    border: 1px solid #ccc;
+    display: inline-block;
+    margin-left: 5px;
+    padding-bottom: 5PX;
+    height: 18px;
+    line-height: px;
+    border-radius: 5px;
+   }
+   .title span{
+    /* border: 1px solid black; */
+    font-size: 13px;
+   
+    } 
+   
+   .title span:nth-child(2){
+       margin-left: -5px;
+   }
+
+input[type='text'],
+textarea {
+    width: 600px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+textarea {
+    resize: none;
+    /* width: 700px; */
+    height: 400px;
+}
+
+input[type='file'] {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+}
+
+.submit-btn {
+    width: 400px;
+    padding: 10px;
+    background-color: #FF7000;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    margin: 20px 0 auto;
+    /* text-align: center; */
+    /* display: inline-block; */
+    margin-left: 100px;
+}
+
+.submit-btn:hover {
+    background-color: #FF7000;
+}
+
+
+
+.x-box::after {
+    content: 'x';
+    background-color: #FF7000;
+    color: white;
+    display: block;
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    top: -5px;
+    right: -5px;
+    text-align: center;
+    line-height: 13px;
+}
+
+.grade-group{
+    /* border: 1px solid black; */
+    /* position: absolute; */
+    /* top : 350px */
+    display: flex;
+}
+
+.grade{
+    display: flex;
+    direction: rtl;
+    border:0;
+    /* border: 1px solid black; */
+    /* flex-di rection: column; */
+    /* text-align: right;     */
+}
+.text-bold{
+    margin-left: 0px;
+    /* border: 1px solid black; */
+    display: inline-block;
+    font-size: 15px;
+    line-height: 30px;
+    height: 15px;
+    margin-right: 5px;
+}
+.grade legend{
+    text-align: right;
+}
+.grade input[type=radio]{
+    display: none;
+}
+.grade label{
+    font-size: 20px;
+    color: transparent;
+    text-shadow: 0 0 0 #f0f0f0;
+}
+.grade label:hover{
+    text-shadow: 0 0 0 rgba(250, 208, 0, 0.99);
+}
+.grade label:hover ~ label{
+    text-shadow: 0 0 0 rgba(250, 208, 0, 0.99);
+}
+.grade input[type=radio]:checked ~ label{
+    text-shadow: 0 0 0 rgba(250, 208, 0, 0.99);
+}

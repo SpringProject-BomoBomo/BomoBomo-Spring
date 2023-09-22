@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/event/css/eventpayment.css"/>
+    <link rel="stylesheet" href="/common/css/common.css"/>
+    <link rel="stylesheet" href="/common/css/footer.css"/>
+    <link rel="stylesheet" href="/common/css/header.css"/>
+    <script src="https://code.jquery.com/jquery-3.7.0.js" integrity="sha256-JlqSTELeR4TLqP0OG9dxM7yDPqX1ox/HfgiSLBj8+kM=" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=2d8cddce5e1cf36a90728390b847c19c" ></script>
+
+    <script src="/common/js/index.js" defer></script>
+    <script src="/common/js/common.js" defer></script>
+    <script src="/event/js/eventpayment.js" defer></script>
+    <title>Document</title>
+</head>
+<body>
+    <div class="header">
+    </div>
+    
+        <main>
+            <div class="main" style="height: 850px;">
+                <div class="payment-section">
+                    <div class="payment-section-name">이벤트 신청서</div>
+                <div class="payment-application">       
+                    <div class="payment-application-write">            
+                        <div class="eventInfo-area">
+                            <div class="info-date" style="text-align: left;" >날짜 및 시간</div>
+                            <input class="eventInfo" type="text" placeholder="(ex: 2023/09/18 오후 2시)" required>
+                        </div>
+                        
+                        <div class="eventInfo-area">
+                            <div class="info-number" style="text-align: left;">휴대폰 번호</div>
+                            <input class="eventInfo" type="text" placeholder="(ex: 010-xxxx-xxxx)" required>
+                        </div>
+                        
+                        <div class="eventInfo-area">
+                            <div class="info-price" style="text-align: left;">이벤트 가격</div>
+                            <input class="eventInfo" type="email" placeholder="100,000 원" disabled>
+                        </div>
+                        
+                        <div class="eventInfo-area" style="margin-top: 60px;"> 
+                            <div class="address-main">주소</div>
+                            <input type="text" class="addressnum" id="address-num" placeholder="우편번호" >
+                            <button type="button" class="addressnumbtn" value="우편번호 찾기" onclick="addressFind()" style= "font-size: 20px;">우편번호</button>
+                            <br/> 
+                            <input type="text" class="addressInput" id="address" placeholder="주소 입력" >
+                            <br/>
+                            <input type="text" class="addressplus" id="address_extra" placeholder="참고주소" >
+                            <input type="text" class="addressdetail" id="address_detail" placeholder="상세주소 입력" > 
+                        </div>
+                    </div>
+            </div>
+            <div class="payment-application-button">
+                <button>결제하기</button>
+           
+         </div>    
+      
+    </main>
+   
+
+        <div class="footer">
+        </div>
+        
+    <script src="//t1.daumcdn.net/mapjsapi/bundle/postcode/prod/postcode.v2.js" defer></script>
+ 
+</body>
+</html>

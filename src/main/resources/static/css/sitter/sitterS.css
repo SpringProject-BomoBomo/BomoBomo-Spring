@@ -1,0 +1,525 @@
+@import url("https://fonts.googleapis.com/css?family=Luckiest+Guy&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Black+Han+Sans&family=Dongle&family=Gamja+Flower&family=IBM+Plex+Sans+KR&family=Single+Day&display=swap');
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+
+main{
+    /* border-top: 1px solid #bbb; */
+    /* background-color: aquamarine; */
+    margin-top: 45px;
+    /* background-color: #f3eeee; */
+}
+
+.user-container{
+    width: 1024px;
+    height: 100%;
+    /* border: 1px solid black;   */
+    margin: 30px auto;
+      
+}
+.section{
+    margin: 0 auto;
+    /* border: 1px solid blue; */
+    height: 100%;
+    /* width: 1024px; */
+    display: flex;
+    /* background-color: #e6e6e6; */
+}
+.menu-bar{
+    /* display: flex;
+    flex-direction: column;
+    justify-content: center; */
+    border: 1px solid #bbb;
+    /* background-color: red; */
+    height: 900px;
+    width: 180px;
+    margin-left: 10px;
+    margin-bottom: 15px;
+}
+.menu-bar>div:first-child{
+  width: 180px;
+  height: 100px;
+  margin: 0;
+  border: none;
+}
+.logo-img>img{
+    height: 100px;
+    width: 170px;
+}
+.menu-bar>div{
+    /* background-color: rgb(255, 255, 255); */
+    /* background-color: black; */
+    margin: 30px auto;
+    border: 1px solid #bbb;
+    text-align: center;
+    /* border-radius: 10%; */
+    width: 150px;
+    height: 40px;
+    color: black;
+}
+
+
+
+.menu-bar>div>a:hover{
+   color: white; 
+   background-color: #0ba891;
+ }
+
+.menu-bar>div>a{
+    text-align: center;
+    display: block;
+    text-decoration: none;
+    line-height: 40px;
+    color: black;
+    font-family: 'Black Han Sans', sans-serif;
+    font-family: 'Dongle', sans-serif !important;
+    font-family: 'Gamja Flower', cursive;
+    font-family: 'IBM Plex Sans KR', sans-serif;
+    font-family: 'Single Day', cursive;
+    font-size: 45px;
+    width: 150px;
+    /* border-radius: 10%; */
+}
+
+.page-view{
+    /* border: 1px solid black; */
+    width: 900px;
+    /* background-color: blue; */
+    /* margin-top: 5px; */
+    margin-left: 20px;
+}
+.page-title{
+    /* border: 1px solid black; */
+    height: 80px;
+    border-bottom: 1px solid #bbb;
+    padding-bottom: 5px;
+}
+.page-title>p{
+    margin-left: 20px;
+    height: 80px;
+    /* border: 1px solid black; */
+    line-height: 100px;
+    font-size: 90px;
+    font-family: 'Black Han Sans', sans-serif;
+    font-family: 'Dongle', sans-serif !important;
+    font-family: 'Gamja Flower', cursive;
+    font-family: 'IBM Plex Sans KR', sans-serif;
+    font-family: 'Single Day', cursive;
+    color: #0ba891;
+    /* padding: 100px; */
+    /* margin-bottom: 10px; */
+    /* border: 1px solid black; */
+}
+.application-page{
+    /* border: 1px solid black; */
+    margin-top: 30px;
+
+
+}
+
+.logo-container-text {
+    /* border: 2px solid red; */
+     width: 890px;
+     height: 90px;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     font-size: 1.15em;
+ 
+ }
+ 
+ /* 로고 설정 */
+ .logo-container-text  h1:nth-child(1),
+ .logo-container-text  h1:nth-child(2) {
+     color:#dfb015;
+     font-family: "Luckiest Guy", cursive;
+     position: relative;
+ 
+ 
+ }
+ /* 로고 첫번째 BOMO 설정 */
+ .logo-container-text  h1:nth-child(1) {
+     /* border: 2px solid black; */
+     width: 200px;
+     top: 15px;
+     transform: rotateZ(-3deg);
+ 
+ }
+ /* 로고 두번째 BOMO 설정 */
+ 
+ .logo-container-text  h1:nth-child(2)  {
+   /* border: 2px solid blue; */
+   right: -90px;
+   top:-20px;
+   transform: rotateZ(-8deg);
+ }
+
+ .logo-container-text h4{
+    height: 60px;
+    font-family: "Luckiest Guy", fantasy;
+    line-height: 90px;
+    /* border: 1px solid black; */
+ }
+
+ .check-area{
+    /* border: 1px solid red; */
+    /* margin-top: 10px; */
+ }
+.childern-check{
+    width: 600px;
+    /* border: 1px solid black;  */
+    /* margin-top: 30px; */
+    /* text-align: center; */
+    margin: 10px auto;
+}
+.childern-check p{
+    font-size: 18px;
+    color: #bbb;
+    font-weight: bold;
+}
+.childern-check input{
+    margin-top: 15px;
+    width: 15px;
+    height: 15px;
+    accent-color:darkgoldenrod;
+    /* color :darkgoldenrod */
+}
+.text-area{
+    /* border: 1px solid black; */
+    margin-top: 15px;
+}
+
+/* .gender-text{
+    border: 1px solid black;
+    width: 600px;
+    height: 40px;
+    margin: 10px auto;
+} */
+.gender-text p{
+    /* border: 1px solid black; */
+    font-size: 18px;
+    font-weight: bold;
+    color: #bbb;
+    width: 600px;
+    height: 35px;
+    margin: 0px auto;
+}
+.gender-check{
+    /* border: 1px solid black; */
+    width: 600px;
+    margin: 0px auto;
+    display: flex;
+    justify-content: space-around;
+}
+.check-box{
+    display: flex;
+    border: 1px solid #bbb;
+    width: 280px;
+    height: 40px;
+    border-radius: 5px;
+    position: relative;
+}
+.label .input-m{
+    border: 1px solid blue;
+    background-color: #0ba891;
+    display: block;
+    width: 280px;
+    height: 40px;
+    /* border: none; */
+    position: absolute;
+    top :0px;
+    left: 0px;
+    /* border-radius: 5px; */
+    color: #0ba891;
+}
+.check-box .label{
+    border: 1px solid red;
+    margin-left: 100px;
+    font-size: 25px;
+    position: absolute;
+    top: 0;
+    left: -100px;    
+    color: #666;
+    /* background-color: #0ba891; */
+    width: 280px;
+    height: 40px;
+    text-align: center;
+    cursor: pointer;
+}
+.input-w{
+    /* border: 1px solid blue; */
+    /* background-color: #0ba891; */
+    /* display: none; */
+    width: 400px;
+    height: 40px;
+    border: none;
+    /* border-radius: 5px; */
+}
+.check-box .label1{
+    /* border: 1px solid red; */
+    margin-left: 100px;
+    font-size: 25px;
+    position: absolute;
+    top: 0;
+    left: -100px;    
+    color: #666;
+    /* background-color: #0ba891; */
+    width: 280px;
+    height: 40px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.text-area-1{
+    border: 1px so/lid black;
+    margin-top: 15px;
+}
+/* .gender-text-2{
+    width: 600px;
+    height: 40px;
+    margin: 10px auto;
+} */
+
+.gender-text-2 p{
+    /* border: 1px solid black; */
+    font-size: 18px;
+    font-weight: bold;
+    color: #bbb;
+    width: 600px;
+    height: 35px;
+    margin: 0px auto;
+    margin-top: 10px;
+}
+
+.gender-check-2{
+    /* border: 1px solid black; */
+    width: 600px;
+    margin: 0px auto;
+    display: flex;
+    justify-content: space-around;
+}
+.check-box-two{
+    border: 1px solid #bbb;
+    width: 280px;
+    height: 40px;
+    border-radius: 5px;
+    position: relative;
+}
+
+.input-m-check{
+    /* border: 1px solid blue; */
+    /* background-color: #0ba891; */
+    display: none;
+    width: 400px;
+    height: 40px;
+    border: none;
+    /* border-radius: 5px; */
+}
+
+.check-box-two .label-area{
+    /* border: 1px solid red; */
+    margin-left: 100px;
+    font-size: 25px;
+    position: absolute;
+    top: 0;
+    left: -100px;    
+    color: #666;
+    /* background-color: #0ba891; */
+    width: 280px;
+    height: 40px;
+    text-align: center;
+}
+
+.input-w-check{
+    /* border: 1px solid blue; */
+    /* background-color: #0ba891; */
+    display: none;
+    width: 400px;
+    height: 40px;
+    border: none;
+    /* border-radius: 5px; */
+}
+
+.check-box-two .label-area-two{
+    /* border: 1px solid red; */
+    margin-left: 100px;
+    font-size: 25px;
+    position: absolute;
+    top: 0;
+    left: -100px;    
+    color: #666;
+    /* background-color: #0ba891; */
+    width: 280px;
+    height: 40px;
+    text-align: center;
+}
+
+.chilren-detil{
+    width: 600px;
+    /* border: 1px solid black; */
+    margin: 20px auto;
+}
+
+.chilren-detil p{
+    font-size: 18px;
+    font-weight: bold;
+    color: #bbb;
+}
+.chilren-detil input{
+    margin-top: 10px;
+    width: 590px;
+    height: 40px;
+    font-size: 15px;
+    border-radius: 5px;
+    background-color: white;
+    color: #bbb;
+    border: 2px solid #bbb;
+}
+.read-text{
+    /* border: 1px solid black; */
+    width: 600px;
+    height: 40px;
+    margin: 10px auto;    
+}
+.read-text p{
+    margin-top: 8px;
+    font-size: 18px;
+    font-weight: bold;
+}
+.chiocecheck-area{
+    /* border: 1px solid black; */
+    width: 600px;
+    margin: 0px auto;
+}
+
+.kor-area{
+    /* border: 1px solid black; */
+    display: flex;
+}
+.ko{
+    /* border: 1px solid black; */
+    width: 80px;
+    margin-left: 10px;
+    text-align: center;
+}
+.ko>div{
+    /* border: 1px solid rebeccapurple; */
+    /* width: 40px; */
+    /* border-radius: 50%; */
+    /* background-color: #e6e6e6; */
+    
+}
+.ko>div img{
+    /* border: 1px solid red; */
+    width: 40px;
+    border-radius: 50%;
+    background-color:#bbb;
+}
+.ko p{
+    font-size: 12px;
+    color: #bbb;
+}
+.select-area{
+    /* border: 1px solid black; */
+    width: 500px;
+}
+.select-area select{
+    width: 500px;
+    height: 40px;
+    font-size: 15px;
+    border-radius: 5px;
+    border-color:#666;
+}
+.eng-area{
+    /* border: 1px solid black; */
+    display: flex;
+    margin-top: 10px;
+}
+.eng{
+    /* border: 1px solid black; */
+    width: 80px;
+    margin-left: 10px;
+    text-align: center;
+}
+.eng>div img{
+    /* border: 1px solid red; */
+    width: 40px;
+    border-radius: 50%;
+    background-color:#bbb;
+}
+.eng p{
+    font-size: 12px;
+    color: #bbb;
+}
+.select-area{
+    /* border: 1px solid black; */
+    width: 500px;
+}
+.select-area select{
+    width: 500px;
+    height: 40px;
+    font-size: 15px;
+    border-radius: 5px;
+    border-color:#666;
+}
+.out-area{
+    /* border: 1px solid black; */
+    display: flex;
+    margin-top: 10px;
+}
+.out{
+    /* border: 1px solid black; */
+    width: 80px;
+    margin-left: 10px;
+    text-align: center;
+}
+.out>div{
+    /* border: 1px solid rebeccapurple; */
+    /* width: 40px; */
+    /* border-radius: 50%; */
+    /* background-color: #e6e6e6; */
+    
+}
+.out>div img{
+    /* border: 1px solid red; */
+    width: 40px;
+    border-radius: 50%;
+    background-color:#bbb;
+}
+.out p{
+    font-size: 12px;
+    color: #bbb;
+}
+.select-area{
+    /* border: 1px solid black; */
+    width: 500px;
+}
+.select-area select{
+    width: 500px;
+    height: 40px;
+    font-size: 15px;
+    border-radius: 5px;
+    border-color:#666;
+}
+
+.inputbtn{
+    /* border: 1px solid black; */
+    width: 600px;
+    margin: 0 auto;
+    margin-top: 20px;
+    text-align: center;
+}
+
+.btn{
+    width: 300px;
+    height: 40px;
+    font-size: 20px;
+    background-color: white;
+    color: #bbb;
+    border: 1px solid #666;
+    border-radius: 5px;
+}

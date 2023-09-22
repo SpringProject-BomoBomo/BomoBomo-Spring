@@ -1,0 +1,240 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+a{
+    text-decoration: none;
+    color: inherit;
+}
+input{
+    padding: 5px;
+    border-radius: 5%;
+    font-size: 16px;
+    font-weight: bold;
+    border: 2px solid rgb(189, 189, 189);
+}
+input:focus{
+    outline: none;
+}
+.admin-container{
+    display: flex;
+    margin :auto ;
+    width: 1200px;
+    height:1000px;
+
+    background-color: #e7e7e7;
+}
+
+.side-container{
+    width: 200px;
+    height: 100%;
+    background-color: #353535;
+}
+
+.side-logo-box{
+    width: 200px;
+    height: 150px;
+    border-bottom: 3px solid #646464;
+}
+
+.logo{
+    width: 200px;
+    height: 150px;
+}
+
+.side-item-container{
+    list-style-type: none;
+}
+
+.side-item{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #e7e7e7;
+    width: 200px;
+    height: 40px;
+    margin: 20px 0;
+    cursor: pointer;
+}
+
+.on{
+    background-color:#01b9ff;
+}
+
+.main-container{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+}
+.main-header{
+    align-items: center;
+    height: 50px;
+    width: 988px;
+    display:flex;
+    background-color: white;
+    /* border:1px solid red; */
+    padding: 5px;
+    box-shadow: 0px 0px 3px 0px gray;
+    border: 1px solid #e6e6e6;
+}
+.main-header-title{
+    color: rgb(139,141, 140);
+    margin: 3px 0 5px 10px;
+    font-size: 30px;
+}
+
+.main-contents{
+    margin-top: 5px;
+    height: 100%;
+}
+.contents-title{
+    margin: 0px 20px;
+    width: 96%;
+    border-bottom: 1px solid #353535;
+    padding-bottom: 10px;
+}
+
+.contents-title > span{
+    color: #646464;
+    font-size: 30px;
+}
+.admin-name{
+    margin-left: auto;
+    width: 50px;
+    margin: 3px 20px 5px 600px;
+    font-size: 30px;
+    color: rgb(139,141, 140);
+}
+.main-header-exit{
+    border: none;
+    border-radius: 10%;
+    width: 100px;
+    height: 40px;
+    cursor: pointer;
+    color: white;
+    background-color: rgb(172, 185, 202);
+    margin-left: auto;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.match-manage-container{
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    height: 85%;
+    margin: 30px auto 0px;
+    background-color: white;
+    box-shadow: 5px 5px 5px 5px gray;
+    border:3px solid #01b9ff;
+    border-radius: 3%;
+}
+.info-container{
+    display: flex;
+    height: 50%;
+}
+.user-info{
+    border: 3px solid #01b9ff;
+    border-radius: 5%;
+    margin: 20px;
+    padding: 20px 0px 0px 20px;
+    width: 45%;
+    height: 90%;
+}
+.user-info > p{
+    padding-top: 10px;
+    font-size: 25px;
+}
+.user-info > a > button{
+    margin-top: 90px;
+    margin-left: 130px;
+    width: 100px;
+    height: 40px;
+    color: white;
+    background-color: #01b9ff;
+    border-radius: 10%;
+    border: 1px solid #e7e7e7;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    font-size: 15px;
+}
+.emp-info{
+    margin: 20px;
+    padding : 20px 0px 0px 20px;
+    width: 50%;
+    height: 90%;
+    border: 3px solid #01b9ff;
+    border-radius: 5%;
+}
+.emp-info>p{
+    padding-top: 10px;
+    font-size: 25px;
+}
+.management{
+    display: flex;
+    margin: 20px;
+    height: 400px;
+    border: 3px solid #01b9ff;
+    border-radius: 3%;
+    padding: 20px 0px 0px 20px;
+}
+
+.match-info{
+    padding-top: 10px;
+    font-size: 25px;
+}
+.match-info>a>button{
+    margin-top: 30px;
+    width: 110px;
+    height: 35px;
+    color: white;
+    margin-left: 20px;
+    background-color: #01b9ff;
+    border-radius: 10%;
+    border: 1px solid #e7e7e7;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    font-size: 15px;
+}
+.status-manage{
+    padding-top: 10px;
+    margin-left: 40px;
+}
+#status{
+    font-size: 20px;
+    width: 120px;
+    height: 30px;
+}
+#status:focus{
+    outline: none;
+}
+.status-manage>form>button{
+    width: 90px;
+    height: 35px;
+    color: white;
+    margin-left: 20px;
+    background-color: #01b9ff;
+    border-radius: 10%;
+    border: 1px solid #e7e7e7;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    font-size: 15px;
+}
+.status-manage>div{
+    height: 100%;
+    display:flex;
+    margin-top: 270px;
+    justify-content: center;
+}
+.status-manage>div>a>button{
+    width: 90px;
+    height: 35px;
+    color: white;
+    margin-left: 20px;
+    background-color: #01b9ff;
+    border-radius: 10%;
+    border: 1px solid #e7e7e7;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    font-size: 15px;
+}

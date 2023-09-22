@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>마이페이지</title>
+    <link rel="stylesheet" href="../css/mypage_main.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <link rel="stylesheet" href="/common/css/common.css"/>
+    <link rel="stylesheet" href="/common/css/footer.css"/>
+    <link rel="stylesheet" href="/common/css/header.css"/>
+    <script src="https://code.jquery.com/jquery-3.7.0.js" integrity="sha256-JlqSTELeR4TLqP0OG9dxM7yDPqX1ox/HfgiSLBj8+kM=" crossorigin="anonymous"></script>
+    <script src="/common/js/index.js" defer></script>
+    <script src="/common/js/common.js" defer></script>
+    <script src="../js/mypage_main.js" defer></script>
+    <script type="text/javascript" src="https://service.iamport.kr/js/iamport.payment-1.1.5.js"></script>
+
+</head>
+<body>
+    <div class="header">
+	</div>
+    <!-- <div class="header-img">
+        <img src="/Mypage/img/images.jpeg"/>
+    </div> -->
+        <main>
+         
+                <div class="mypage-container">
+                    <div class="section">
+                        <aside class="menu-bar">
+                            
+                                <!-- <a href="/Mypage/html/mypage_main.html" class="logo-img">
+                                    <img src="/Mypage/img/logo.png">
+                                </a> -->
+                            
+                            <div class="announcement">
+                                <!--클릭시  페이지 이동-->
+                            <a href="#">공지사항</a> 
+                            </div>
+                            <div class="faq">
+                                <a href="#">FAQ</a> 
+                            </div>
+                            <div class="pay">
+                                <a href="/Mypage/html/buy_page.html">결제내역</a>
+                            </div>
+                            <div class="account-mg">
+                                <a href="/Mypage/html/user_management.html">계정관리</a>
+                            </div>
+                        </aside>
+                        <div class="page-view">
+                            <div class="page-title">
+                                <p>마이페이지</p>
+                            </div>
+                            <div class="user-area">
+                                <div class="user-area-container">
+                                    <div class="userimg">
+                                        <img src="../img/bobo.jpeg" class="img"/>
+                                    </div>
+                                    <div class="username">
+                                        <p>김성찬 부모님</p>
+                                        <p>신청서 관리</p>
+                                    </div>
+                                    <div class="application">
+                                        <a href="/Mypage/html/application_page.html" class="pagemove">
+                                            <span class="material-symbols-outlined">
+                                                chevron_right
+                                            </span>
+                                        </a>
+                                    </div>
+                                </div>    
+                            </div>   
+                            <!--데이터를 받아서 면접중인 시터가 있을때와 없을때 구분-->
+                            <div class="siterinfo-area">
+                                <div class="siterinfo-area-container">
+                                
+                                    <div class="siterimg">
+                                        <!--데이터에서 이미지 받기-->
+                                        <img src="../img/bobo.jpeg">
+                                    </div>
+                                    <div class="siter-info">
+                                        <div class="siter-detail-info">
+                                            <ul class="siter-private-info">
+                                                <li>김보노</li>
+                                                <li>52세</li>
+                                                <li>여</li>
+                                            </ul>
+                                            <p><span>평점 4.5</span></p>
+                                            <!--시터의 주요 자격 이미지로 들어옴-->
+                                            <ul class="siter-prove">
+                                                <li>
+                                                    <img src="https://cdn.mom-sitter.com/momsitter-app/static/public/profile_2021/IndoorOndetail.svg">
+                                                </li>
+                                                <li>
+                                                    <img src="https://cdn.mom-sitter.com/momsitter-app/static/public/profile_2021/IndoorOndetail.svg">
+                                                </li>
+                                                <li>
+                                                    <img src="https://cdn.mom-sitter.com/momsitter-app/static/public/profile_2021/IndoorOndetail.svg">
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <!--데이터 값의 조건을 걸어서 보여지는 창을 바꿔야함
+                                        추가로 창 을 2개더 만들어서 조건으로 창을 바꿔야함-->
+                                        <div class="siter-situation">
+                                          
+                                                <span>면접대기중</span>    
+                                            
+                                            <!--모달창으로 만들어서 띄우기 -->
+                                        </div>
+                                        <!---->
+                                        <div class="modal-pay">
+                                            <h1 class="pay-name">결제하기</h1>    
+                                            <div class="payment-wrap">
+                                            
+                                            <div class="payment-wrap-left">
+                                                <div class="user-info-area">
+                                                    <p class="user-info">주문자 정보</p>
+                                                    <ul class="user-detail">
+                                                        <li class="user">
+                                                            <p>주문자</p>
+                                                            <p class="user-private-area">
+                                                                <span class="user-name">김성찬</span>
+                                                                <span class="user-phone">01012341234</span>
+                                                            </p>
+                                                            
+                                                            <p class="user-email">wwww@naver.com</p>
+                                                        </li>
+                                                        <li class="user-address">
+                                                            <p>배송자 정보</p>
+                                                            <p class="address">주소</p>
+                                                            <p class="address-info">서울시 노원구 노원대로 1111</p>
+                                                            <p class="address-detail">뉴서울 아파트 111동 1111호</p>
+                                                        </li>
+                                                    </ul>    
+                                                </div>
+                                            </div>   
+                                            <div class="payment-wrap-right">
+                                                <div class="product-area">
+                                                    <ul class="product-info">
+                                                        <li class="product-detail">
+                                                            <p class="product-title">
+                                                                <span>[보모보모]</span>
+                                                                <span>알들살뜰 돌보기</span>                        
+                                                            </p>    
+                                                            <p class="usetime">
+                                                                <span>이용시간 :</span>
+                                                                <span>0000~0000</span>
+                                                            </p>
+                                                            <p class="pay"> 
+                                                                <span>결제 금액</span>
+                                                                <span>1,000,000원</span>
+                                                            </p>
+                                                        </li>
+                                                        <li class="product-detail">
+                                                            <p class="product-title">
+                                                                <span>[보모보모]</span>
+                                                                <span>알들살뜰 돌보기</span>                        
+                                                            </p>    
+                                                            <p class="usetime">
+                                                                <span>이용시간 :</span>
+                                                                <span>0000~0000</span>
+                                                            </p>
+                                                            <p class="pay"> 
+                                                                <span>결제 금액</span>
+                                                                <span>1,000,000원</span>
+                                                            </p>
+                                                        </li>
+                                                        <li class="product-detail">
+                                                            <p class="product-title">
+                                                                <span>[보모보모]</span>
+                                                                <span>알들살뜰 돌보기</span>                        
+                                                            </p>    
+                                                            <p class="usetime">
+                                                                <span>이용시간 :</span>
+                                                                <span>0000~0000</span>
+                                                            </p>
+                                                            <p class="pay"> 
+                                                                <span>결제 금액</span>
+                                                                <span>1,000,000원</span>
+                                                            </p>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                                <div class="total-area">
+                                                    <p class="total-payment">
+                                                        <span>최종 결제 금액 : </span>
+                                                        <span>00000000원</span>
+                                                    </p>
+                                                </div>
+                                                <div class="check-area">
+                                                    <button class="btn" id="check_module">결제하기</button>
+                                                </div>
+
+                                            </div> 
+                                            </div>
+                                        </div>        
+                                        <!---->
+                                    </div>
+                                </div>    
+                            </div>
+                            <div class="review-area">
+                                <div class="reviewtab-area">
+                                    <span class="reviewtab1">시터 이용 후기</span>
+                                    <span class="reviewtab2">이벤트 이용 후기</span>
+                                </div>
+                                <!--데이터로 게시판 넘겨받을 영역-->
+                                <div class="review-list-area">
+                                <table class="table"> 
+                                        <tr class="review-text top">
+                                            <td class="review-num">번호</td>
+                                            <td class="review-title">제목</td>
+                                            <td class="review-data">날짜</td>
+                                        </tr>
+                                        <tr class="review-text">
+                                            <td class="review-num">1</td>
+                                            <td class="review-title">
+                                                <a href="#">보모보모너무너무좋아요</a>
+                                            </td>
+                                            <td class="review-data">2023-09-13</td>
+                                        </tr>
+                                        <tr class="review-text">
+                                            <td class="review-num">2</td>
+                                            <td class="review-title">
+                                                <a href="#">보모보모너무너무좋아요</a>
+                                            </td>
+                                            <td class="review-data">2023-09-13</td>
+                                        </tr>
+                                        <tr class="review-text">
+                                            <td class="review-num">3</td>
+                                            <td class="review-title">
+                                                <a href="#">보모보모너무너무좋아요</a>
+                                            </td>
+                                            <td class="review-data">2023-09-13</td>
+                                        </tr>
+                                        <tr class="review-text">
+                                            <td class="review-num">4</td>
+                                            <td class="review-title">
+                                                <a href="#">보모보모너무너무좋아요</a>
+                                            </td>
+                                            <td class="review-data">2023-09-13</td>
+                                        </tr>
+                                        <tr class="review-text">
+                                            <td class="review-num">5</td>
+                                            <td class="review-title">
+                                                <a href="#">보모보모너무너무좋아요</a>
+                                            </td>
+                                            <td class="review-data">2023-09-13</td>
+                                        </tr>
+                                        <tr class="review-text">
+                                            <td class="review-num">7</td>
+                                            <td class="review-title">
+                                                <a href="#">보모보모너무너무좋아요</a>
+                                            </td>
+                                            <td class="review-data">2023-09-13</td>
+                                        </tr>
+                                        <tr class="review-text">
+                                            <td class="review-num">8</td>
+                                            <td class="review-title">
+                                                <a href="#">보모보모너무너무좋아요</a>
+                                            </td>
+                                            <td class="review-data">2023-09-13</td>
+                                        </tr>
+                                        <tr class="review-text">
+                                            <td class="review-num">9</td>
+                                            <td class="review-title">
+                                                <a href="#">보모보모너무너무좋아요</a>
+                                            </td>
+                                            <td class="review-data">2023-09-13</td>
+                                        </tr>
+                                    
+                                    </table>
+                                    <div class="paging">
+                                        <ul class="page">
+                                            <a href="#" class="page-a">
+                                                <li class="page-num prev">&lt</li>
+                                            </a>
+                                            <a>
+                                                <li>1</li>
+                                            </a>
+                                            <a>
+                                                <li>2</li>
+                                            </a>
+                                            <a>    
+                                                <li>3</li>
+                                            </a>
+                                            <a href="#" class="page-b">
+                                                <li class="page-num next">&gt</li>
+                                            </a>
+                                        </ul>
+                                    </div> 
+                                </div>
+                                <div class="review-list-area1">
+                                    <table class="table1"> 
+                                        <tr class="review-text1 top1">
+                                            <td class="review-num1">번호</td>
+                                            <td class="review-title1">제목</td>
+                                            <td class="review-data1">날짜</td>
+                                        </tr>
+                                        <tr class="review-text1">
+                                            <td class="review-num1">1</td>
+                                            <td class="review-title1">
+                                                <a href="#">보모보모너무너무좋아요</a>
+                                            </td>
+                                            <td class="review-data1">2023-09-13</td>
+                                        </tr>
+                                        <tr class="review-text1">
+                                            <td class="review-num1">2</td>
+                                            <td class="review-title1">
+                                                <a href="#">보모보모너무너무좋아요</a>
+                                            </td>
+                                            <td class="review-data1">2023-09-13</td>
+                                        </tr>
+                                        <tr class="review-text1">
+                                            <td class="review-num1">3</td>
+                                            <td class="review-title1">
+                                                <a href="#">보모보모너무너무좋아요</a>
+                                            </td>
+                                            <td class="review-data1">2023-09-13</td>
+                                        </tr>
+                                        <tr class="review-text1">
+                                            <td class="review-num1">4</td>
+                                            <td class="review-title1">
+                                                <a href="#">보모보모너무너무좋아요</a>
+                                            </td>
+                                            <td class="review-data1">2023-09-13</td>
+                                        </tr>
+                                        <tr class="review-text1">
+                                            <td class="review-num1">5</td>
+                                            <td class="review-title1">
+                                                <a href="#">보모보모너무너무좋아요</a>
+                                            </td>
+                                            <td class="review-data1">2023-09-13</td>
+                                        </tr>
+                                        <tr class="review-text1">
+                                            <td class="review-num1">6</td>
+                                            <td class="review-title1">
+                                                <a href="#">보모보모너무너무좋아요</a>
+                                            </td>
+                                            <td class="review-data1">2023-09-13</td>
+                                        </tr>
+                                        <tr class="review-text1">
+                                            <td class="review-num1">7</td>
+                                            <td class="review-title1">
+                                                <a href="#">보모보모너무너무좋아요</a>
+                                            </td>
+                                            <td class="review-data1">2023-09-13</td>
+                                        </tr>
+                                        <tr class="review-text1">
+                                            <td class="review-num1">8</td>
+                                            <td class="review-title1">
+                                                <a href="#">보모보모 이벤트 너무너무좋아요</a>
+                                            </td>
+                                            <td class="review-data1">2023-09-13</td>
+                                        </tr>
+                                    
+                                    </table>
+                                    <div class="paging1">
+                                        <ul class="page1">
+                                            <a href="#" class="page-a1">
+                                                <li class="page-num1 prev">&lt</li>
+                                            </a>
+                                            <a>
+                                                <li>1</li>
+                                            </a>
+                                            <a>
+                                                <li>2</li>
+                                            </a>
+                                            <a>    
+                                                <li>3</li>
+                                            </a>
+                                            <a href="#" class="page-b1">
+                                                <li class="page-num1 next">&gt</li>
+                                            </a>
+                                        </ul>
+                                    </div> 
+                                </div>
+                            </div>
+                    
+                        </div>
+            
+                    </div>    
+                </div>
+                    
+        </main>
+    </div>    
+    <div class=footer></div>     
+</body>
+</html>

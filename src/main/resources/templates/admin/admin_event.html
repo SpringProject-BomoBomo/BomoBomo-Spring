@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>관리자 페이지</title>
+    <link rel="stylesheet" href="../css/admin_event.css">
+</head>
+<body>
+    <!-- 전체 컨테이너 -->
+    <div class="admin-container">
+        <!-- 사이드 컨테이너 -->
+        <div class="side-container">
+            <div class="side-logo-box">
+                   <img class="logo" src="../img/logo.png" alt="logo">
+            </div>
+            <ul class="side-item-container">
+                <li class="side-item" ><a href="admin_main.html">대시보드</a></li>
+                <li class="side-item"><a href ="admin_user.html">회원정보</a></li>
+                <li class="side-item"><a href="admin_emp.html">직원관리</a></li>
+                <li class="side-item"><a href="admin_match.html">매칭관리</a></li>
+                <li class="side-item on"><a href="admin_event.html">이벤트관리</a></li>
+                <li class="side-item"><a href="admin_announce.html">공지사항</a></li>
+            </ul>
+        </div>
+
+        <!-- 메인 컨테이너 -->
+        <div class="main-container">
+            <!-- 메인 헤더 -->
+            <div class="main-header">
+                <span class="main-header-title">BomoBomo</span>
+                <span class="admin-name">admin</span>
+                <button class="main-header-exit">나가기</button>
+            </div>
+            <!-- 메인 컨텐츠 -->
+            <div class="main-contents">
+                <div class="contents-title">
+                    <span class="main-contents-title-text">이벤트관리</span>
+
+                    <div class="event-search-container">
+                        <form action=""> 
+                          <select>
+                            <option>제목</option>
+                          </select>
+                          <input type="text" id="search" />
+                          <button type="submit">
+                            <span class="material-symbols-outlined">search</span>
+                          </button>
+                        </form>
+                   </div>
+                   
+                </div>
+                <div class="event-container">
+                    <div class="event-list">
+
+                        <div class="event-item">
+                            <div class="event-img">
+                                <img class="thumbnail" src="../img/event1.jpg" alt="썸네일">
+                            </div>
+                            <div class="event-title">땅파기</div>
+                        </div>
+
+                        <div class="event-item">
+                            <div class="event-img">
+                                <img class="thumbnail" src="../img/event2.jpg" alt="썸네일">
+                            </div>
+                            <div class="event-title">손닦기</div>
+                        </div>
+
+                        <div class="event-item">
+                            <div class="event-img">
+                                <img class="thumbnail" src="../img/event3.jpg" alt="썸네일">
+                            </div>
+                            <div class="event-title">공놀이</div>
+                        </div>
+
+                        
+                        <div class="event-item">
+                            <div class="event-img">
+                                <img class="thumbnail" src="../img/event1.jpg" alt="썸네일">
+                            </div>
+                            <div class="event-title">땅파기</div>
+                        </div>
+
+                        <div class="event-item">
+                            <div class="event-img">
+                                <img class="thumbnail" src="../img/event2.jpg" alt="썸네일">
+                            </div>
+                            <div class="event-title">손닦기</div>
+                        </div>
+
+                        <div class="event-item">
+                            <div class="event-img">
+                                <img class="thumbnail" src="../img/event3.jpg" alt="썸네일">
+                            </div>
+                            <div class="event-title">공놀이</div>
+                        </div>
+
+                        
+                        <div class="event-item">
+                            <div class="event-img">
+                                <img class="thumbnail" src="../img/event1.jpg" alt="썸네일">
+                            </div>
+                            <div class="event-title">땅파기</div>
+                        </div>
+
+                        <div class="event-item">
+                            <div class="event-img">
+                                <img class="thumbnail" src="../img/event2.jpg" alt="썸네일">
+                            </div>
+                            <div class="event-title">손닦기</div>
+                        </div>
+
+                        <div class="event-item">
+                            <div class="event-img">
+                                <img class="thumbnail" src="../img/event3.jpg" alt="썸네일">
+                            </div>
+                            <div class="event-title">공놀이</div>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="event-list-bottom">
+
+                     <div class="pagination-container">
+                       <a href="#" class="bt prev">&lt;</a>
+                       <a href="#" class="bt num on">1</a>
+                       <a href="#" class="bt num">2</a>
+                       <a href="#" class="bt num">3</a>
+                       <a href="#" class="bt num">4</a>
+                       <a href="#" class="bt num">5</a>
+                       <a href="#" class="bt next">&gt;</a>
+                     </div>
+                     <a href="admin_event_regist.html">
+                        <button>이벤트등록</button>
+                     </a>
+               </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="../js/admin_event.js"></script>
+</html>

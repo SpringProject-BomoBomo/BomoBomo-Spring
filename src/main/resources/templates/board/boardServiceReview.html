@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="/board/css/board.css"/>
+    <link rel="stylesheet" href="/board/css/boardServiceReview.css"/>
+    <link rel="stylesheet" href="/common/css/common.css"/>
+    <link rel="stylesheet" href="/common/css/footer.css"/>
+    <link rel="stylesheet" href="/common/css/header.css"/>
+    <script src="https://code.jquery.com/jquery-3.7.0.js" integrity="sha256-JlqSTELeR4TLqP0OG9dxM7yDPqX1ox/HfgiSLBj8+kM=" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=2d8cddce5e1cf36a90728390b847c19c" ></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <!-- <script src="/board/js/boardFAQ.js" defer></script> -->
+    <script src="/common/js/common.js" defer></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>서비스 이용 후기</title>
+</head>
+<body>
+    <div class="header"></div>
+    <main style="height: 1400px;">
+        <div class="review-banner-container">
+            <div class="review-banner">
+                <img src="/board/img/boardBannerImg.png" alt=""/>
+               
+                <p>이곳은, <br>소중한 후기들이 모여있는 곳입니다</p>
+            </div>
+        </div>
+        <div class="review-container service-review">
+            <div class="review-main-title">
+                <h3>후기 게시판</h3>
+            </div>
+            <div class="review-title-container">
+                <div class="reivew-section-title">
+                    <ul>
+                        <li><a href="#" style="color: black;">돌봄 후기</a></li>
+                        <li><a href="#">이벤트 후기</a></li>
+                    </ul>
+                </div>
+                <div class="review-search">
+                    <form class="review-search-form" action="#" method="#">
+                        <!-- <div class="sitter-name-select">
+                            <select name="sitter-name" id="sitter-name">
+                                <option>이름</option>
+                            </select>
+                        </div> -->
+                        <div class="search-bar">
+                            <input type="text" name="sitterSearch" placeholder="보모님을 검색해보세요!"/>
+                        </div>
+                        <div class="sitter-search-btn">
+                            <button>
+                                <span class="material-symbols-outlined">
+                                search
+                                </span>
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div class="review-content-container">
+                <ul class="review-ul">
+                    <li>
+                        <a href="/board/html/boardDetailReview.html">
+                            <div class="review-sitter-img">
+                                <img src="/common/img/보모사진1.jpg" alt="리뷰 보모사진"/>
+                            </div>
+                            <div class="review-sitter-content">
+                                <p><strong>이정미 시터</strong></p>
+                                    <div class="review-score">
+                                        <img src="/common/img/star.png"><span>4.5/5</span>      
+                                    </div>                         
+                            </div>
+                            <div class="reivew-text-content">
+                                <dl>
+                                    <dt><strong>보노보노</strong></dt>
+                                    <dd>
+                                        <p>
+                                            정말 꼼꼼하세요!야야야정말 꼼꼼하세요!!!!!야야야정말 꼼꼼하세요!야야야정말 꼼꼼하세요!
+                                            야sdfsdf야야정말 꼼꼼하세요!야야야정말 꼼꼼하세요!야야야정말 꼼꼼하세요!야야야
+                                        </p>
+                                    </dd>
+                                </dl>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="/board/html/boardDetailReview.html">
+                            <div class="review-sitter-img">
+                                <img src="/common/img/보모사진1.jpg" alt="리뷰 보모사진"/>
+                            </div>
+                            <div class="review-sitter-content">
+                                <p><strong>이정미 시터</strong></p>
+                                    <div class="review-score">
+                                        <img src="/common/img/star.png"><span>4.5/5</span>      
+                                    </div>                         
+                            </div>
+                            <div class="reivew-text-content">
+                                <dl>
+                                    <dt><strong>보노보노</strong></dt>
+                                    <dd>
+                                        <p>
+                                            정말 꼼꼼하세요!야야야정말 꼼꼼하세요!!!!!야야야정말 꼼꼼하세요!야야야정말 꼼꼼하세요!
+                                            야sdfsdf야야정말 꼼꼼하세요!야야야정말 꼼꼼하세요!야야야정말 꼼꼼하세요!야야야
+                                        </p>
+                                    </dd>
+                                </dl>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="/board/html/boardDetailReview.html">
+                            <div class="review-sitter-img">
+                                <img src="/common/img/보모사진1.jpg" alt="리뷰 보모사진"/>
+                            </div>
+                            <div class="review-sitter-content">
+                                <p><strong>이정미 시터</strong></p>
+                                    <div class="review-score">
+                                        <img src="/common/img/star.png"><span>4.5/5</span>      
+                                    </div>                         
+                            </div>
+                            <div class="reivew-text-content">
+                                <dl>
+                                    <dt><strong>보노보노</strong></dt>
+                                    <dd>
+                                        <p>
+                                            정말 꼼꼼하세요!야야야정말 꼼꼼하세요!!!!!!!야야야정말 꼼꼼하세요!야야야정말 꼼꼼하세요!
+                                            야sdfsdf야야정말 꼼꼼하세요!야야야정말 꼼꼼하세요!야야야정말 꼼꼼하세요!야야야
+                                        </p>
+                                    </dd>
+                                </dl>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="/board/html/boardDetailReview.html">
+                            <div class="review-sitter-img">
+                                <img src="/common/img/보모사진1.jpg" alt="리뷰 보모사진"/>
+                            </div>
+                            <div class="review-sitter-content">
+                                <p><strong>이정미 시터</strong></p>
+                                    <div class="review-score">
+                                        <img src="/common/img/star.png"><span>4.5/5</span>      
+                                    </div>                         
+                            </div>
+                            <div class="reivew-text-content">
+                                <dl>
+                                    <dt><strong>보노보노</strong></dt>
+                                    <dd>
+                                        <p>
+                                            정말 꼼꼼하세요!야야야정말 꼼꼼하세요!!!!!!!야야야정말 꼼꼼하세요!야야야정말 꼼꼼하세요!
+                                            야sdfsdf야야정말 꼼꼼하세요!야야야정말 꼼꼼하세요!야야야정말 꼼꼼하세요!야야야
+                                        </p>
+                                    </dd>
+                                </dl>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="/board/html/boardDetailReview.html">
+                            <div class="review-sitter-img">
+                                <img src="/common/img/보모사진1.jpg" alt="리뷰 보모사진"/>
+                            </div>
+                            <div class="review-sitter-content">
+                                <p><strong>이정미 시터</strong></p>
+                                    <div class="review-score">
+                                        <img src="/common/img/star.png"><span>4.5/5</span>      
+                                    </div>                         
+                            </div>
+                            <div class="reivew-text-content">
+                                <dl>
+                                    <dt><strong>보노보노</strong></dt>
+                                    <dd>
+                                        <p>
+                                            정말 꼼꼼하세요!야야야정말 꼼꼼하세요!!!!!야야야정말 꼼꼼하세요!야야야정말 꼼꼼하세요!
+                                            야sdfsdf야야정말 꼼꼼하세요!야야야정말 꼼꼼하세요!야야야정말 꼼꼼하세요!야야야
+                                        </p>
+                                    </dd>
+                                </dl>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="/board/html/boardDetailReview.html">
+                            <div class="review-sitter-img">
+                                <img src="/common/img/보모사진1.jpg" alt="리뷰 보모사진"/>
+                            </div>
+                            <div class="review-sitter-content">
+                                <p><strong>이정미 시터</strong></p>
+                                    <div class="review-score">
+                                        <img src="/common/img/star.png"><span>4.5/5</span>      
+                                    </div>                         
+                            </div>
+                            <div class="reivew-text-content">
+                                <dl>
+                                    <dt><strong>보노보노</strong></dt>
+                                    <dd>
+                                        <p>
+                                            정말 꼼꼼하세요!야야야정말 꼼꼼하세요!!!!!야야야정말 꼼꼼하세요!야야야정말 꼼꼼하세요!
+                                            야sdfsdf야야정말 꼼꼼하세요!야야야정말 꼼꼼하세요!야야야정말 꼼꼼하세요!야야야
+                                        </p>
+                                    </dd>
+                                </dl>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="/board/html/boardDetailReview.html">
+                            <div class="review-sitter-img">
+                                <img src="/common/img/보모사진1.jpg" alt="리뷰 보모사진"/>
+                            </div>
+                            <div class="review-sitter-content">
+                                <p><strong>이정미 시터</strong></p>
+                                    <div class="review-score">
+                                        <img src="/common/img/star.png"><span>4.5/5</span>      
+                                    </div>                         
+                            </div>
+                            <div class="reivew-text-content">
+                                <dl>
+                                    <dt><strong>보노보노</strong></dt>
+                                    <dd>
+                                        <p>
+                                            정말 꼼꼼하세요!야야야정말 꼼꼼하세요!!!!!!!야야야정말 꼼꼼하세요!야야야정말 꼼꼼하세요!
+                                            야sdfsdf야야정말 꼼꼼하세요!야야야정말 꼼꼼하세요!야야야정말 꼼꼼하세요!야야야
+                                        </p>
+                                    </dd>
+                                </dl>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="/board/html/boardDetailReview.html">
+                            <div class="review-sitter-img">
+                                <img src="/common/img/보모사진1.jpg" alt="리뷰 보모사진"/>
+                            </div>
+                            <div class="review-sitter-content">
+                                <p><strong>이정미 시터</strong></p>
+                                    <div class="review-score">
+                                        <img src="/common/img/star.png"><span>4.5/5</span>      
+                                    </div>                         
+                            </div>
+                            <div class="reivew-text-content">
+                                <dl>
+                                    <dt><strong>보노보노</strong></dt>
+                                    <dd>
+                                        <p>
+                                            정말 꼼꼼하세요!야야야정말 꼼꼼하세요!!!!!!!야야야정말 꼼꼼하세요!야야야정말 꼼꼼하세요!
+                                            야sdfsdf야야정말 꼼꼼하세요!야야야정말 꼼꼼하세요!야야야정말 꼼꼼하세요!야야야
+                                        </p>
+                                    </dd>
+                                </dl>
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <!-- 페이징처리 -->
+            <div class="board-pagenation-container">
+                <ul>
+                    <li><a href="#">&lt;</a></li>
+                    <li><a href="#">1</a></li>
+                    <li><a href="#">2</a></li>
+                    <li><a href="#">3</a></li>
+                    <li><a href="#">4</a></li>
+                    <li><a href="#">5</a></li>
+                    <li><a href="#">&gt;</a></li>
+                </ul>
+            </div>
+        </div>
+    </main>
+    <div class="footer"></div>
+</body>
+</html>

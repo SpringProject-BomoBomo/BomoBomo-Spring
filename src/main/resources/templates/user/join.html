@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<!-- <html lang="en"> -->
+<html lang="ko" xmlns:th="http://www.thymeleaf.org">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/common/css/header.css" />
+    <link rel="stylesheet" href="/common/css/footer.css" />
+    <link rel="stylesheet" href="/common/css/common.css" />
+    <link rel="stylesheet" href="/user/css/join.css" />
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+
+    <script src="/common/js/index.js" defer></script>
+    <script src="/common/js/common.js" defer></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
+
+
+
+    <title>BOMOBOMO</title>
+</head>
+
+<body>
+
+    <!-- 헤더부분 -->
+    <div class="header">
+    </div>
+
+    
+        <div class="main">
+            <main>
+                <div class="joinContainer">
+                        <!-- 회원가입 라벨 -->
+                        <div class="joinGreeting">
+                            <h3>회원가입</h3>
+                            <h6>BOMOBOMO에 오신 것을 환영합니다.!</h6>
+                        </div>
+                        <!-- 회원가입 라벨 -->
+
+
+                        <!-- <form action="" method="post"> -->
+                            <!-- 회원 정보 등록 -->
+                            <div>
+                                <div class="inputGroup">
+                                        <div class="userInfoText">
+                                            <img src="../img/userId.png">
+                                            <input class="userInfo" type="text" id="id" name="id" placeholder="아이디">
+                                            <label class="labelId infoLabel">로그인 X</label>
+                                        </div>
+                                        <div class="userInfoText">
+                                            <img src="../img/userPw.png">
+                                            <input class="userInfo" type="password" id="pw" name="pw"
+                                                placeholder="비밀번호">
+                                        </div>
+                                        <div class="userInfoText">
+                                            <img src="../img/userPw.png">
+                                            <input class="userInfo" type="password" id="pwCh" name="pwCh"
+                                                placeholder="비밀번호 체크">
+                                            <label class="labelPwCh infoLabel">비밀번호일치 X</label>
+                                        </div>
+                                        <div class="userInfoText">
+                                            <img src="../img/userId.png">
+                                            <input class="userInfo" type="text" id="name" name="name" placeholder="이름">
+                                            <label class="labelName infoLabel">로그인 X</label>
+                                        </div>
+                                        <div class="userInfoText">
+                                            <img src="../img/email.png">
+                                            <input class="userInfo" type="email" id="email" name="email"
+                                                placeholder="이메일">
+                                            <label class="labelEm infoLabel">표준 이메일이 아닙니다.</label>
+                                        </div>
+                                        <div class="userInfoText">
+                                            <img src="../img/phone.png">
+                                            <input class="userInfo" type="text" id="phone" name="phone"
+                                                placeholder="휴대폰번호 (-없이 입력 해주세요.)" maxlength="11">
+                                            <label class="labelPh infoLabel">번호가 알맞지 않습니다.</label>
+                                        </div>
+                                        <div class="userInfoText">
+                                            <img src="../img/addr.png">
+                                            <input class="postalCode" type="text" id="address-num" placeholder="우편번호">
+                                            <button type="button" class="addrBtn" value="우편번호 찾기" onclick="addressFind()">우편번호</button>
+                                        </div>
+                                        <div class="userInfoText">
+                                            <img src="../img/addr.png">
+                                            <input class="userInfo" type="text" id="address" placeholder="주소">
+                                        </div>
+                                        <div class="userInfoText detailAddrs">
+                                            <img src="../img/addr.png">
+                                            <input class="referAddr" type="text" id="addressExtra" placeholder="상세주소">
+                                            <img src="../img/addr.png" class="detailImg">
+                                            <input class="detailAddr" type="text" id="addressDetail" placeholder="상세주소">
+                                        </div>
+                                </div>
+                                <!-- 회원 정보 등록 -->
+
+                                <div class="buttonJoin">
+                                    <!-- onclick="location='login.html'" -->
+                                    <button class="joinBtn">회원가입</button>
+                                </div>
+                            </div>
+                        <!-- </form> -->
+
+
+                </div>
+            </main>
+        </div>
+
+
+    <!-- 푸터부분 -->
+    <div class="footer">
+    </div>
+    <!-- 푸터부분 -->
+
+
+    <script src="//t1.daumcdn.net/mapjsapi/bundle/postcode/prod/postcode.v2.js" defer></script>
+    <script src="https://code.jquery.com/jquery-3.6.4.js"></script>
+    <script src="../js/join.js"></script>
+
+</body>
+
+</html>

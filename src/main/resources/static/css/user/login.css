@@ -1,0 +1,131 @@
+a {
+    text-decoration: none;
+}
+
+li {
+    margin: 15px auto;
+    list-style-type: none;
+    float: left;
+}
+
+.ul {
+    position: absolute;
+    margin-left: -10px;
+    justify-content: center;
+
+}
+
+.main{
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    justify-content: center;
+}
+
+.header, .footer {
+    background-color: #fff;
+    padding: 20px 0;
+}
+
+.loginContainer {
+    width: 1024px;
+    height: 100%;
+    background-color: rgb(255, 255, 255);
+}
+
+.loginArea {
+    width: 350px;
+    height: 700px;
+    margin: 0 auto;
+    border: 0px solid black;
+}
+
+.loginGreeting {
+    padding-top: 100px;
+    font-size: 32px;
+    color: #000;
+    font-weight: 500;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.conpanyName {
+    color: #FF7000;
+}
+
+.inputGroup{
+    width: 350px;
+    height: 100px;   
+    display: table;
+    border-collapse: collapse;  
+}
+
+.inputText input{
+    width : 330px;
+    height: 30px;
+    margin-bottom: 10px;
+}
+
+.buttonLogin button{
+    width : 355px;
+    height: 40px;
+    margin-top: 30px;  
+    cursor: pointer;
+    color: white;
+    background-color: #FF7000;
+    border: 0px solid black;
+    border-radius: 5px;
+    font-weight: 500;
+    font-size: 20px;
+
+
+}
+
+.userInfo {
+    width: 350px;
+    border-radius: 4px;
+    border: 1px solid #bbb;
+    text-indent: 25px;
+    padding: 10px 12px;
+    font-size: 14px;
+}
+
+.userInfoText {
+    position: relative;
+    width: 300px;
+  }
+
+.userInfoText img {
+    position : absolute;
+    width: 20px; 
+    /* width: 50px; */
+    top: 15px;
+    left: 12px;
+    margin: 0;
+}
+.userInfoObt {
+    display: flex;
+    justify-content: center;
+}
+.userInfoObt a {
+    font-size: medium;
+    color: #FF7000;
+}
+.userInfoObt a:hover {
+    font-size: medium;
+    color: orange;
+}
+
+
+.labelId, .labelPw {
+    display: none;
+}
+
+
+
+
+
+
+
+
+
+
